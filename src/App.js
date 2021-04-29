@@ -1,25 +1,65 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './componente/Navbar';
+import Propiedades from './componente/Propiedades';
+import CarouselContainer from './componente/CarouselContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React,{Component, useState} from 'react';
+
+
+
+class App extends Component{
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      items: []
+    };
+  }
+
+  componentDidMount(){
+		fetch("https://portafolio-inmobiliaria.herokuapp.com/")
+    
+    .then(res => res.json())
+    .then(
+      (result) => {
+        this.setState({
+          isLoaded: true,
+          items: result
+        });
+      },
+
+      (error) => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      }
+    )
 }
 
+render(){
+
+  const { error, isLoaded, items } = this.state;
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  } 
+
+  else {
+  return (
+ <div className="App">
+ <Navbar />
+ <CarouselContainer />
+ <Propiedades 
+ items ={items}
+ />
+
+    </div>
+  );}
+  }
+}
 export default App;
