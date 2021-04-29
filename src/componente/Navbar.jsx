@@ -1,5 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BiSearchAlt } from "react-icons/bi";
+
+import React from 'react';
+import {Link} from 'react-router-dom'
+
 function Navbar() {
   return (
     <div className="Navbar">
@@ -13,21 +17,21 @@ function Navbar() {
       
 
       <li className="nav-item ">
-        <a className="nav-link links nounderline " href="/"> <i className="fa fa-home" aria-hidden="true"></i> Home </a>
+        <Link className="nav-link links nounderline " to="/"> <i className="fa fa-home" aria-hidden="true"></i> Home </Link>
 
 
       </li>
 
       <li className="nav-item">
-        <a className="nav-link links nounderline " href="/contacto">Contactanos</a>
+        <Link className="nav-link links nounderline " to="/contacto">Contactanos</Link>
       </li>
 
       <li className="nav-item">
-      <a className="nav-link links nounderline " href="/contacto">alquiler</a>
+      <Link className="nav-link links nounderline " to="/alquiler">Alquiler</Link>
     </li>
 
   <li className="nav-item">
-    <a className="nav-link links nounderline " href="/contacto">venta</a>
+    <Link className="nav-link links nounderline " to="/venta">Venta</Link>
   </li>
 
     </ul>

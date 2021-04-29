@@ -5,7 +5,7 @@
 import React, { Component } from 'react'; //different
 
 
-class App extends Component{
+class venta extends Component{
 
 
   constructor(props) {
@@ -21,7 +21,7 @@ class App extends Component{
 
   componentDidMount(){
 
-		fetch(`https://portafolio-inmobiliaria.herokuapp.com/detalle/${this.state.mm}`)
+		fetch(`https://portafolio-inmobiliaria.herokuapp.com/propiedades/venta`)
     
     .then(res => res.json())
     .then(
@@ -52,12 +52,12 @@ render(){
 
   else {
   return (
- <div className="App">
+ <div className="venta">
 
 
-    {items.titulo}
+    {items[0].titulo}
     </div>
   );}
   }
 }
-export default App;
+export default venta;
