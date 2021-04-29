@@ -1,19 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from './../imagenes/imagenPrincipal1.jpg';
 import './../App.css';
-
+import { Link } from 'react-router-dom';
 
 
 
 
 const Propiedades = ({items}) => {
 
+
   return (
+      
 
 <div>
     
 {/* Primer propiedad  */}
-<div className="Propiedad">
+
+{/* Link que dirige al detalle del producto */}
+<Link to ={`/detalle/${items[0].idpropiedad}`} className="Propiedad">
 
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
@@ -33,17 +37,24 @@ const Propiedades = ({items}) => {
 </div>
 {/* /Texto */}
 
-</div>
+{/* /Link que dirige al detalle del producto */}
+</Link>
 {/* /Primer propiedad  */}
 
 
 
+
+
 {/* Segunda propiedad  */}
-<div className='Propiedad ' id='Propiedad2'>
+
+{/* Link que dirige al detalle del producto */}
+<Link to ={`/detalle/${items[1].idpropiedad}`} className='Propiedad ' id='Propiedad2' >
+
 {/* Texto */}
 <div className='m-5'>
-{items[1].titulo}
+{items[0].idpropiedad}<br></br>
 {items[1].precio}
+
 </div>
 {/* /Texto */}
 
@@ -57,13 +68,16 @@ const Propiedades = ({items}) => {
 </div>
 {/* /imagen */}
 
-</div>
+{/* /Link que dirige al detalle del producto */}
+</Link>
 {/* /Segunda propiedad  */}
 
 
-
 {/* Tercer propiedad  */}
-<div className='Propiedad '>
+
+{/* Link que dirige al detalle del producto */}
+<Link  className='Propiedad 'to ={`/detalle/${items[2].idpropiedad}`}>
+
 
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
@@ -83,7 +97,9 @@ const Propiedades = ({items}) => {
 </div>
 {/* /Texto */}
 
-</div>
+{/* /Link que dirige al detalle del producto */}
+</Link>
+
 {/* /Tercer propiedad  */}
 
 

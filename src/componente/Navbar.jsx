@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BiSearchAlt } from "react-icons/bi";
-
 function Navbar() {
   return (
     <div className="Navbar">

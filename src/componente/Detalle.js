@@ -1,8 +1,3 @@
-import './App.css';
-import Navbar from './componente/Navbar';
-import Propiedades from './componente/Propiedades';
-import CarouselContainer from './componente/CarouselContainer';
-import Detalle from './componente/Detalle';
 
 
 
@@ -19,12 +14,15 @@ class App extends Component{
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      mm: props.match.params.id
+
     };
   }
 
   componentDidMount(){
-		fetch("https://portafolio-inmobiliaria.herokuapp.com/")
+
+		fetch(`https://portafolio-inmobiliaria.herokuapp.com/detalle/${this.state.mm}`)
     
     .then(res => res.json())
     .then(
@@ -56,27 +54,9 @@ render(){
   else {
   return (
  <div className="App">
-<Router>
- 
- {/* navegacion */}
- <Navbar />
- {/* /navegacion */}
 
-{/* Carrousel de imagenes */}
- < Route path ="/" exact  component={CarouselContainer} />
 
-{/* propiedades */}
- < Route path ="/" exact >
- < Propiedades items ={items}/>
- </Route>
-
- {/* Propiedad de forma detallada */}
- < Route path ="/detalle/:id"  component={Detalle} />
-
-{/* Contacto */}
-
- </Router>
-
+    {items.titulo}
     </div>
   );}
   }
