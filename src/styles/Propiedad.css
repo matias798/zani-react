@@ -1,0 +1,61 @@
+
+
+
+.Propiedad{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#PropiedadesImageContainer2{
+    justify-content: end;
+
+}
+
+.PropiedadesImage{
+    max-width: 77%;
+}
+
+.descripcion_propiedad {
+color: #AAA;
+text-align: center;
+word-wrap: break-word; width: 50vw;
+}
+
+
+.PropiedadesIcons{
+    margin: 5%;
+}
+
+@media(max-width:640px)
+{
+
+    .Propiedad{
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+
+    #Propiedad2{
+    justify-content: center;
+    flex-wrap: wrap-reverse
+     }
+    
+   
+    .PropiedadesImageContainer{
+        display: flex;
+        justify-content: center;
+    }
+#PropiedadesImageContainer2{
+    justify-content: center;
+
+}
+
+    .PropiedadesImage{
+        margin: 10px;
+        align-self: center;
+        width: 70%;
+
+    }
+}

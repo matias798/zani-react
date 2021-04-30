@@ -1,17 +1,13 @@
+import './../styles/Propiedad.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import image1 from './../imagenes/imagenPrincipal1.jpg';
-import './../App.css';
 import { Link } from 'react-router-dom';
-
-
+import Iconos from './Iconos';
 
 
 const Propiedades = ({items}) => {
 
-
   return (
-      
-
 <div>
     
 {/* Primer propiedad  */}
@@ -31,14 +27,24 @@ const Propiedades = ({items}) => {
 
 
 {/* Texto */}
-<div className='m-5'>
-{items[0].titulo}
-{items[0].precio}
+<div className='texto m-5'>
+<h2>{items[0].titulo}</h2>
+<p>{items[0].descripcion}</p>
 </div>
 {/* /Texto */}
 
+
+
+
 {/* /Link que dirige al detalle del producto */}
 </Link>
+
+<Iconos 
+
+dormitorios={items[0].dormitorios}
+baños={items[0].baños}
+habitaciones={items[0].habitaciones}/>
+
 {/* /Primer propiedad  */}
 
 
@@ -51,10 +57,9 @@ const Propiedades = ({items}) => {
 <Link to ={`/detalle/${items[1].idpropiedad}`} className='Propiedad ' id='Propiedad2' >
 
 {/* Texto */}
-<div className='m-5'>
-{items[0].idpropiedad}<br></br>
-{items[1].precio}
-
+<div className='texto m-5'>
+<h2>{items[1].titulo}</h2>
+<p>{items[1].descripcion}</p>
 </div>
 {/* /Texto */}
 
@@ -68,8 +73,21 @@ const Propiedades = ({items}) => {
 </div>
 {/* /imagen */}
 
+
+
+
 {/* /Link que dirige al detalle del producto */}
 </Link>
+
+<div className=' d-flex justify-content-end text-right'>
+<Iconos 
+ dormitorios={items[1].dormitorios}
+ baños={items[1].baños}
+ habitaciones={items[1].habitaciones}
+/>
+
+</div>
+
 {/* /Segunda propiedad  */}
 
 
@@ -91,19 +109,26 @@ const Propiedades = ({items}) => {
 
 
 {/* Texto */}
-<div className='m-5'>
-{items[2].titulo}
-{items[2].precio}
+<div className='texto m-5'>
+<h2>{items[2].titulo}</h2>
+<p>{items[2].descripcion}</p>
 </div>
 {/* /Texto */}
 
 {/* /Link que dirige al detalle del producto */}
 </Link>
 
+{/* iconos */}
+<Iconos
+ dormitorios={items[2].dormitorios}
+ baños={items[2].baños}
+ habitaciones={items[2].habitaciones}
+ 
+ />
+
+
+
 {/* /Tercer propiedad  */}
-
-
-
 
 </div>
 

@@ -5,7 +5,7 @@ import image1 from './../imagenes/imagenPrincipal1.jpg';
 import image2 from './../imagenes/imagenPrincipal1.jpg';
 import image3 from './../imagenes/imagenPrincipal1.jpg';
 
-const CarouselContainer = () => {
+const Carrousel = () => {
   return (
     <Carousel fade={true} pause={false}>
       <Carousel.Item interval={2000}>
@@ -45,4 +45,4 @@ const CarouselContainer = () => {
   )
 }
 
-export default CarouselContainer;
+export default Carrousel;

@@ -1,0 +1,133 @@
+
+.perfilAgente {
+    position: relative;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+}
+.perfilAgente .advisor_thumb {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+    padding: 30px 30px 0 30px;
+    background-color:   #2980b9   ;
+    overflow: hidden;
+
+}
+.perfilAgente .advisor_thumb::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 150%;
+    height: 80px;
+    bottom: -45px;
+    left: -25%;
+    content: "";
+    background-color: #ffffff;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+@media only screen and (max-width: 575px) {
+    .perfilAgente .advisor_thumb::after {
+        height: 160px;
+        bottom: -90px;
+    }
+}
+.perfilAgente .advisor_thumb .social-info {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    right: 30px;
+    text-align: right;
+}
+.perfilAgente .advisor_thumb .social-info a {
+    font-size: 14px;
+    color: #020710;
+    padding: 0 5px;
+}
+.perfilAgente .advisor_thumb .social-info a:hover,
+.perfilAgente .advisor_thumb .social-info a:focus {
+    color: #3f43fd;
+}
+.perfilAgente .advisor_thumb .social-info a:last-child {
+    padding-right: 0;
+}
+.perfilAgente .single_advisor_details_info {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    text-align: right;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+}
+.perfilAgente .single_advisor_details_info::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 3px;
+    background-color: #85C1E9;
+    content: "";
+    top: 12px;
+    right: 30px;
+}
+.perfilAgente .single_advisor_details_info h6 {
+    margin-bottom: 0.25rem;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .perfilAgente .single_advisor_details_info h6 {
+        font-size: 14px;
+    }
+}
+.perfilAgente .single_advisor_details_info  {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .perfilAgente .single_advisor_details_info  {
+        font-size: 12px;
+    }
+}
+.perfilAgente:hover .advisor_thumb::after,
+.perfilAgente:focus .advisor_thumb::after {
+    background-color: #070a57;
+}
+.perfilAgente:hover .advisor_thumb .social-info a,
+.perfilAgente:focus .advisor_thumb .social-info a {
+    color: #ffffff;
+}
+.perfilAgente:hover .advisor_thumb .social-info a:hover,
+.perfilAgente:hover .advisor_thumb .social-info a:focus,
+.perfilAgente:focus .advisor_thumb .social-info a:hover,
+.perfilAgente:focus .advisor_thumb .social-info a:focus {
+    color: #ffffff;
+}
+.perfilAgente:hover .single_advisor_details_info,
+.perfilAgente:focus .single_advisor_details_info {
+    background-color: #070a57;
+}
+.perfilAgente:hover .single_advisor_details_info::after,
+.perfilAgente:focus .single_advisor_details_info::after {
+    background-color: #ffffff;
+}
+.perfilAgente:hover .single_advisor_details_info h6,
+.perfilAgente:focus .single_advisor_details_info h6 {
+    color: #ffffff;
+}
+.perfilAgente:hover .single_advisor_details_info ,
+.perfilAgente:focus .single_advisor_details_info  {
+    color: #ffffff;
+}
