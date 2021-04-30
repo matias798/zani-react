@@ -9,7 +9,7 @@ import TarjetaContacto from './componente/TarjetaContacto';
 
 import React, { Component } from 'react'; //different
 
-import {BrowserRouter as Router,Route }  from 'react-router-dom'
+import {Route }  from 'react-router-dom'
 
 class indice extends Component{
 

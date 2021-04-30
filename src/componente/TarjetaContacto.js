@@ -28,7 +28,7 @@ const TarjetaContacto = () => {
                 <div className="col-lg-4 col-md-4">
                   <div className="card-body d-flex align-items-center c-detail">
                     <div className="mr-3 align-self-center">
-                      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png"/>
+                      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png" alt='icono telefono'/>
                     </div>
                     <div className="">
                       <h3 className="font-weight-medium">Telefono</h3>
@@ -40,7 +40,7 @@ const TarjetaContacto = () => {
                 <div className="col-lg-4 col-md-4">
                   <div className="card-body d-flex align-items-center c-detail">
                     <div className="mr-3 align-self-center">
-                      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png"/>
+                      <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png" alt='icono email'/>
                     </div>
                     <div >
                       <h3 className="font-weight-medium ">Email</h3>
