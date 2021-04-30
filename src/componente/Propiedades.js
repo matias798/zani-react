@@ -12,8 +12,7 @@ const Propiedades = ({items}) => {
     
 {/* Primer propiedad  */}
 
-{/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[0].idpropiedad}`} className="Propiedad">
+<div  className="Propiedad">
 
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
@@ -30,14 +29,20 @@ const Propiedades = ({items}) => {
 <div className='texto m-5'>
 <h2>{items[0].titulo}</h2>
 <p>{items[0].descripcion}</p>
-</div>
-{/* /Texto */}
 
-
-
-
-{/* /Link que dirige al detalle del producto */}
+{/* Link que dirige al detalle del producto */}
+<Link to ={`/detalle/${items[0].idpropiedad}`}>
+ <div>
+ <span className='btn btn-secondary-lg text-center'>Ver más</span>
+ </div>
 </Link>
+{/* /link que dirige al detalle del producto */}
+
+</div>
+
+
+
+</div>
 
 <Iconos 
 
@@ -53,16 +58,24 @@ habitaciones={items[0].habitaciones}/>
 
 {/* Segunda propiedad  */}
 
-{/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[1].idpropiedad}`} className='Propiedad ' id='Propiedad2' >
+<div className='Propiedad ' id='Propiedad2' >
 
 {/* Texto */}
 <div className='texto m-5'>
 <h2>{items[1].titulo}</h2>
 <p>{items[1].descripcion}</p>
-</div>
-{/* /Texto */}
 
+
+
+{/* Link que dirige al detalle del producto */}
+<Link to ={`/detalle/${items[1].idpropiedad}`}>
+ <div>
+ <span className='btn btn-secondary-lg text-center'>Ver más</span>
+ </div>
+</Link>
+{/* /link que dirige al detalle del producto */}
+
+</div>
 {/* imagen */}
 <div className=' PropiedadesImageContainer d-flex ' id='PropiedadesImageContainer2'>
 <img
@@ -74,10 +87,7 @@ habitaciones={items[0].habitaciones}/>
 {/* /imagen */}
 
 
-
-
-{/* /Link que dirige al detalle del producto */}
-</Link>
+</div>
 
 <div className=' d-flex justify-content-end text-right'>
 <Iconos 
@@ -94,7 +104,7 @@ habitaciones={items[0].habitaciones}/>
 {/* Tercer propiedad  */}
 
 {/* Link que dirige al detalle del producto */}
-<Link  className='Propiedad 'to ={`/detalle/${items[2].idpropiedad}`}>
+<div  className='Propiedad 'to ={`/detalle/${items[2].idpropiedad}`}>
 
 
 {/* imagen */}
@@ -112,11 +122,19 @@ habitaciones={items[0].habitaciones}/>
 <div className='texto m-5'>
 <h2>{items[2].titulo}</h2>
 <p>{items[2].descripcion}</p>
-</div>
-{/* /Texto */}
 
-{/* /Link que dirige al detalle del producto */}
+
+{/* Link que dirige al detalle del producto */}
+<Link to ={`/detalle/${items[2].idpropiedad}`}>
+ <div>
+ <span className='btn btn-secondary-lg text-center'>Ver más</span>
+ </div>
 </Link>
+{/* /link que dirige al detalle del producto */}
+
+</div>
+
+</div>
 
 {/* iconos */}
 <Iconos
