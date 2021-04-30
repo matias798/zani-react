@@ -103,8 +103,7 @@ habitaciones={items[0].habitaciones}/>
 
 {/* Tercer propiedad  */}
 
-{/* Link que dirige al detalle del producto */}
-<div  className='Propiedad 'to ={`/detalle/${items[2].idpropiedad}`}>
+<div  className='Propiedad '>
 
 
 {/* imagen */}
