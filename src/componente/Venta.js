@@ -55,7 +55,15 @@ render(){
  <div className="venta">
 
 
-    {items[0].titulo}
+
+{items.map((items) => (
+          <div className="col-md-4 mt-5">
+{items.titulo}
+
+
+          </div>
+        ))}
+
     </div>
   );}
   }

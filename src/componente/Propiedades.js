@@ -44,11 +44,13 @@ const Propiedades = ({items}) => {
 
 </div>
 
+{/* iconos */}
+<div className='m-5'>
 <Iconos 
-
 dormitorios={items[0].dormitorios}
 baños={items[0].baños}
 habitaciones={items[0].habitaciones}/>
+</div>
 
 {/* /Primer propiedad  */}
 
@@ -89,7 +91,7 @@ habitaciones={items[0].habitaciones}/>
 
 </div>
 
-<div className=' d-flex justify-content-end text-right'>
+<div className=' d-flex justify-content-end text-right m-5'>
 <Iconos 
  dormitorios={items[1].dormitorios}
  baños={items[1].baños}
@@ -136,12 +138,12 @@ habitaciones={items[0].habitaciones}/>
 </div>
 
 {/* iconos */}
-<Iconos
+<div className='m-5'> <Iconos
  dormitorios={items[2].dormitorios}
  baños={items[2].baños}
  habitaciones={items[2].habitaciones}
- 
  />
+</div>
 
 
 

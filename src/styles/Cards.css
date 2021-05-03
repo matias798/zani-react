@@ -1,0 +1,45 @@
+.card:hover {
+    transition: all 0.7s linear;
+  }
+  
+  .card-body {
+    padding: 2rem 0 !important;
+  }
+  
+  .card-text {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+  }
+
+  
+  .overflow {
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.8);
+  }
+  
+
+  .max-size{
+      text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+word-wrap: break-word; 
+width: 20vw;
+text-overflow:ellipsis}
+
+
+@media(max-width:760px)
+{
+    .max-size{
+        width: 75vw;
+
+    }
+
+ }

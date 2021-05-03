@@ -13,11 +13,9 @@ const iconos = ({dormitorios,habitaciones,baños}) => {
   return (
 
 
-    
 
 
-
-<div className='d-flex m-5'>
+<div className='d-flex '>
   
 <div className='d-flex  justify-content-center'>
 <BiBed className=' PropiedadesIcons m-3' />
