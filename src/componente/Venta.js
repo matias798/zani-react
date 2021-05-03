@@ -1,11 +1,10 @@
+import React, { Component } from 'react'; 
+import image1 from './../imagenes/imagenPrincipal1.jpg';
+import Card from "./Card";
+import { Link } from 'react-router-dom';
 
 
-
-
-import React, { Component } from 'react'; //different
-
-
-class venta extends Component{
+class Venta extends Component{
 
 
   constructor(props) {
@@ -14,11 +13,11 @@ class venta extends Component{
       error: null,
       isLoaded: false,
       items: [],
-      mm: props.match.params.id
+      mm: props.match.params.id,
+      cards:[]
 
     };
   }
-
   componentDidMount(){
 
 		fetch(`https://portafolio-inmobiliaria.herokuapp.com/propiedades/venta`)
@@ -44,6 +43,7 @@ class venta extends Component{
 render(){
 
   const { error, isLoaded, items } = this.state;
+
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
@@ -52,20 +52,28 @@ render(){
 
   else {
   return (
- <div className="venta">
-
-
-
-{items.map((items) => (
-          <div className="col-md-4 mt-5">
-{items.titulo}
-
-
+   <div className="container d-flex justify-content-center align-items-center h-100">
+      <div className="row ">
+        {items.map((items) => (
+          <div key='i' className="col-md-4 mt-5" >
+           
+           
+<Link to ={`/detalle/${items.idpropiedad}`}>
+            <Card
+ imageSource={image1}
+ titulo={items.titulo} 
+ dormitorios={items.dormitorios}
+ baños={items.baños}
+ habitaciones={items.habitaciones} 
+ descripcion ={items.descripcion} />
+          </Link>
+          
+          
           </div>
         ))}
-
+        
+      </div>
     </div>
-  );}
-  }
-}
-export default venta;
+  )}}}
+
+export default Venta;

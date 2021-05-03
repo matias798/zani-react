@@ -95,7 +95,7 @@ alt="First slide" />
 
 {/* Texto */}
 <div className='texto m-5'>
-<h2>{items .titulo}</h2>
+<h2>{items.titulo}</h2>
 <p>{items.descripcion}</p>
 </div>
 </div>

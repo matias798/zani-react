@@ -1,4 +1,4 @@
-import React, { Component } from 'react'; //different
+import React, { Component } from 'react'; 
 import image1 from './../imagenes/imagenPrincipal1.jpg';
 import Card from "./Card";
 import { Link } from 'react-router-dom';
@@ -55,7 +55,7 @@ render(){
    <div className="container d-flex justify-content-center align-items-center h-100">
       <div className="row ">
         {items.map((items) => (
-          <div className="col-md-4 mt-5" >
+          <div  key='j' className="col-md-4 mt-5" >
            
            
 <Link to ={`/detalle/${items.idpropiedad}`}>
