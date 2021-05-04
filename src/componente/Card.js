@@ -6,13 +6,16 @@ import 'animate.css/animate.min.css'
 
 
 
-function Card({ imageSource, titulo,dormitorios, baños ,habitaciones, descripcion }) {
+function Card({ imagen, titulo,dormitorios, baños ,habitaciones, descripcion }) {
+
+  let urlimagen = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + imagen;
+
   return (
    
     
    <div className="card text-center bg-white animate__animated animate__fadeInUp ">
       <div className="overflow">
-        <img src={imageSource} alt="a wallpaper" className="card-img-top" />
+        <img src={urlimagen} alt="a wallpaper" className="card-img-top" />
       </div>
       <div className="card-body p-5 max-size">
       

@@ -39,7 +39,7 @@ const NuestroEquipo = () => {
             <div className="social-info">
           <a href="https://es-la.facebook.com/pages/category/Real-Estate-Agent/Estudio-ZANI-Inmobiliaria-457171584356389/">
             <i className="fa fa-facebook"></i></a>
-          <a href="#"><i className="fa fa-linkedin"></i></a></div>
+          <a href="google.com"><i className="fa fa-linkedin"></i></a></div>
           </div>
           {/* <!-- Team Details--> */}
           <div className="single_advisor_details_info">
@@ -55,8 +55,8 @@ const NuestroEquipo = () => {
           <div className="advisor_thumb">
         <img src={agente2} className='w-100 rounded' alt=""/>
             {/* <!-- Social Info--> */}
-            <div className="social-info"><a href="#"><i className="fa fa-facebook"></i></a><a href="#">
-              <i className="fa fa-twitter"></i></a><a href="#"><i className="fa fa-linkedin"></i></a></div>
+            <div className="social-info">
+              </div>
           </div>
           {/* <!-- Team Details--> */}
           <div className="single_advisor_details_info">
@@ -72,8 +72,8 @@ const NuestroEquipo = () => {
           <div className="advisor_thumb">
         <img src={agente3} className='w-100 rounded' alt=""/>
             {/* <!-- Social Info--> */}
-            <div className="social-info"><a href="#"><i className="fa fa-facebook"></i></a><a href="#">
-              <i className="fa fa-twitter"></i></a><a href="#"><i className="fa fa-linkedin"></i></a></div>
+            <div className="social-info"><a href="google.com"><i className="fa fa-facebook"></i></a><a href="google.com">
+              <i className="fa fa-twitter"></i></a><a href="google.com"><i className="fa fa-linkedin"></i></a></div>
           </div>
           {/* <!-- Team Details--> */}
           <div className="single_advisor_details_info">

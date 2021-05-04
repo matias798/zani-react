@@ -1,11 +1,16 @@
 import './../styles/Propiedad.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from './../imagenes/imagenPrincipal1.jpg';
 import { Link } from 'react-router-dom';
 import Iconos from './Iconos';
 
 
 const Propiedades = ({items}) => {
+
+ let image1 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[0].imagen_principal;
+ let image2 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[1].imagen_principal;
+ let image3 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[2].imagen_principal;
+
+
 
   return (
 <div>
@@ -17,7 +22,7 @@ const Propiedades = ({items}) => {
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
 <img
-          className=" PropiedadesImage d-block"
+          className="PropiedadesImage d-block"
           src={image1}
           alt="First slide"
         />
@@ -82,7 +87,7 @@ habitaciones={items[0].habitaciones}/>
 <div className=' PropiedadesImageContainer d-flex ' id='PropiedadesImageContainer2'>
 <img
           className="PropiedadesImage d-block"
-          src={image1}
+          src={image2}
           alt="First slide"
         />
 </div>
@@ -112,7 +117,7 @@ habitaciones={items[0].habitaciones}/>
 <div className='PropiedadesImageContainer'>
 <img
           className="PropiedadesImage d-block"
-          src={image1}
+          src={image3}
           alt="First slide"
         />
 </div>

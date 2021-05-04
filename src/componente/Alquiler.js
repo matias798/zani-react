@@ -1,5 +1,4 @@
 import React, { Component } from 'react'; 
-import image1 from './../imagenes/imagenPrincipal1.jpg';
 import Card from "./Card";
 import { Link } from 'react-router-dom';
 
@@ -43,7 +42,6 @@ class Alquiler extends Component{
 render(){
 
   const { error, isLoaded, items } = this.state;
-
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
@@ -59,13 +57,16 @@ render(){
            
            
 <Link to ={`/detalle/${items.idpropiedad}`}>
-            <Card
- imageSource={image1}
+
+<Card
  titulo={items.titulo} 
  dormitorios={items.dormitorios}
  baños={items.baños}
  habitaciones={items.habitaciones} 
- descripcion ={items.descripcion} />
+ descripcion ={items.descripcion}
+ imagen={items.imagen_principal}
+
+ />
           </Link>
           
           

@@ -1,6 +1,3 @@
-
-
-
 .Propiedad{
     margin-top: 6%;
     display: flex;
@@ -14,7 +11,7 @@
 }
 
 .PropiedadesImage{
-    max-width: 77%;
+    width: 70vw;
 }
 
 .descripcion_propiedad {

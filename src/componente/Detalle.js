@@ -1,5 +1,4 @@
 import React, { Component } from 'react'; //different
-import image1 from './../imagenes/imagenPrincipal1.jpg';
 
 
 class App extends Component{
@@ -39,9 +38,10 @@ class App extends Component{
 }
 
 render(){
+  const { error,isLoaded,items } = this.state;
+ let image1 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items.imagen_principal;
 
-  const { error, isLoaded, items } = this.state;
-  if (error) {
+ if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>Loading...</div>;
