@@ -6,9 +6,9 @@ import Iconos from './Iconos';
 
 const Propiedades = ({items}) => {
 
- let image1 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[0].imagen_principal;
- let image2 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[1].imagen_principal;
- let image3 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items[2].imagen_principal;
+ let image1 = 'https://api-zanni.herokuapp.com/images/' + items[0].imagen_principal;
+ let image2 = 'https://api-zanni.herokuapp.com/images/' + items[1].imagen_principal;
+ let image3 = 'https://api-zanni.herokuapp.com/images/' + items[2].imagen_principal;
 
 
 

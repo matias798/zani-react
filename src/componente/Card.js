@@ -8,12 +8,12 @@ import 'animate.css/animate.min.css'
 
 function Card({ imagen, titulo,dormitorios, baños ,habitaciones, descripcion }) {
 
-  let urlimagen = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + imagen;
+  let urlimagen = 'https://api-zanni.herokuapp.com/images/' + imagen;
 
   return (
    
     
-   <div className="card text-center bg-white animate__animated animate__fadeInUp ">
+   <div id='card' className="card text-center bg-white animate__animated animate__fadeInUp ">
       <div className="overflow">
         <img src={urlimagen} alt="a wallpaper" className="card-img-top" />
       </div>

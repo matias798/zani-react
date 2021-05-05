@@ -2,6 +2,10 @@
     transition: all 0.7s linear;
   }
   
+  #card{
+    width: 300px;
+  }
+
   .card-body {
     padding: 2rem 0 !important;
   }
@@ -17,6 +21,7 @@
   }
   
   .card-img-top {
+    height: 300px;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
   }

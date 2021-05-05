@@ -38,7 +38,7 @@ function Navbar() {
     <form className="form-inline my-2 my-lg-0"  action="/search" method="POST" autoComplete="on">
      
 <div>
-      <input className=" text-center unified_inputs form-control mr-sm-2" id="search_input"  name="search_input" type="text" type="text" placeholder="Buscar" autoComplete="on"/>
+      <input className=" text-center unified_inputs form-control mr-sm-2" id="search_input"  name="search_input" type="text" placeholder="Buscar" autoComplete="on"/>
       <button  id="SearchIcon" className="btn btn-secondary rounded my-2 my-sm-0" type="submit" autoComplete="on"><BiSearchAlt /> </button>
 </div>
      

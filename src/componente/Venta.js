@@ -19,7 +19,7 @@ class Venta extends Component{
   }
   componentDidMount(){
 
-		fetch(`https://portafolio-inmobiliaria.herokuapp.com/propiedades/venta`)
+		fetch(`https://api-zanni.herokuapp.com/propiedades/venta`)
     
     .then(res => res.json())
     .then(
@@ -53,8 +53,8 @@ render(){
   return (
    <div className="container d-flex justify-content-center align-items-center h-100">
       <div className="row ">
-        {items.map((items) => (
-          <div key='i' className="col-md-4 mt-5" >
+        {items.map((items,i) => (
+          <div key={i} className="col-md-4 mt-5" >
            
            
 <Link to ={`/detalle/${items.idpropiedad}`}>

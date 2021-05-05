@@ -17,7 +17,7 @@ class App extends Component{
 
   componentDidMount(){
 
-		fetch(`https://portafolio-inmobiliaria.herokuapp.com/detalle/${this.state.mm}`)
+		fetch(`https://api-zanni.herokuapp.com/detalle/${this.state.mm}`)
     
     .then(res => res.json())
     .then(
@@ -39,7 +39,8 @@ class App extends Component{
 
 render(){
   const { error,isLoaded,items } = this.state;
- let image1 = 'https://portafolio-inmobiliaria.herokuapp.com/images/' + items.imagen_principal;
+
+
 
  if (error) {
     return <div>Error: {error.message}</div>;
@@ -54,7 +55,7 @@ render(){
 {/* Main image */}
 <img
 className="d-block h-50 w-100"
-src={image1}
+src={`https://api-zanni.herokuapp.com/images/${items.resp[0].path}`}
 alt="First slide" />
 {/* /Main image */}
 
@@ -64,8 +65,8 @@ alt="First slide" />
 
 {/* Texto */}
 <div className='texto m-5 p-5'>
-<h2 className='text-center p-5'>{items.titulo}</h2>
-<p>{items.descripcion}</p>
+<h2 className='text-center p-5'>{items.propiedad.titulo}</h2>
+<p>{items.propiedad.descripcion}</p>
 {/* /Texto */}
 </div>
 
@@ -73,7 +74,7 @@ alt="First slide" />
 <div className='m-5 p-5'>
 <img
           className="w-100 "
-          src={image1}
+          src={`https://api-zanni.herokuapp.com/images/${items.resp[1].path}`}
           alt="First slide"
         />
 </div>
@@ -81,12 +82,12 @@ alt="First slide" />
 </div>
 {/* /Segunda propiedad  */}
 
-<div  className='Propiedad 'to ={`/detalle/${items.idpropiedad}`}>
+<div  className='Propiedad 'to ={`/detalle/${items.propiedad.idpropiedad}`}>
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
 <img
           className="PropiedadesImage d-block"
-          src={image1}
+          src={`https://api-zanni.herokuapp.com/images/${items.resp[2].path}`}
           alt="First slide"
         />
 </div>
@@ -95,8 +96,8 @@ alt="First slide" />
 
 {/* Texto */}
 <div className='texto m-5'>
-<h2>{items.titulo}</h2>
-<p>{items.descripcion}</p>
+<h2>{items.propiedad.titulo}</h2>
+<p>{items.propiedad.descripcion}</p>
 </div>
 </div>
 
@@ -106,7 +107,7 @@ alt="First slide" />
 {/* Main image */}
 <img
 className="d-block  w-100"
-src={image1}
+src={`https://api-zanni.herokuapp.com/images/${items.resp[3].path}`}
 alt="First slide" />
 {/* /Main image */}
 </div>
@@ -121,7 +122,7 @@ alt="First slide" />
 <div >
 {/* Texto */}
 <div className='text-center '>
-<p>{items.descripcion}</p>
+<p>{items.propiedad.descripcion}</p>
 {/* /Texto */}
 </div>
 
@@ -129,7 +130,7 @@ alt="First slide" />
 <div className=' d-flex align-items-end justify-content-start pt-5 mt-5'>
 <img
           className=" align-self-center PropiedadesImage mt-5 pt-5 w-50 d-block"
-          src={image1}
+          src={`https://api-zanni.herokuapp.com/images/${items.resp[4].path}`}
           alt="First slide"
         />
 </div>
@@ -141,7 +142,7 @@ alt="First slide" />
 <div >
 <img
           className=" w-100 h-100 d-block"
-          src={image1}
+          src={`https://api-zanni.herokuapp.com/images/${items.resp[5].path}`}
           alt="First slide"
         />
 </div>
@@ -151,15 +152,6 @@ alt="First slide" />
 </div>
 
 
-
-<div className='mt-5 pt-5'>
-{/* Main image */}
-<img
-className="d-block w-100"
-src={image1}
-alt="First slide" />
-{/* /Main image */}
-</div>
 
 
 

@@ -24,7 +24,7 @@ class indice extends Component{
   }
 
   componentDidMount(){
-		fetch("https://portafolio-inmobiliaria.herokuapp.com/")
+		fetch("https://api-zanni.herokuapp.com/propiedades")
     
     .then(res => res.json())
     .then(
