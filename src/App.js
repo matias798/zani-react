@@ -4,6 +4,7 @@ import Detalle from './componente/Detalle';
 import Contacto from './componente/contacto';
 import Alquiler from './componente/Alquiler';
 import Venta from './componente/Venta';
+import Footer from './componente/Footer';
 import Indice from './indice';
 
 
@@ -47,6 +48,11 @@ render(){
 < Route path ="/venta"  component={Venta} />
 
  </Router>
+
+
+ {/* Footer */}
+ <Footer />
+ {/* /Footer */}
 
     </div>
   );
