@@ -1,5 +1,6 @@
 import React, { Component } from 'react'; //different
 import './../styles/Detalle.css';
+import CarouselContainer from './Carrousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
@@ -57,6 +58,29 @@ render(){
   } 
 
   else {
+
+//Datos del carousel 
+
+/* array que almacena imagenes del carousel */ 
+const images = []
+
+// loop que inserta imagenes si la cantidad es mayor a 4
+for(let i = 4;i < items.resp.length; i ++){
+
+
+  images.push({
+    id: i ,
+    title: items.propiedad.descripcion,
+    image:
+    'https://api-zanni.herokuapp.com/images/' + items.resp[i].path,
+  })
+
+
+}
+//Datos del carousel 
+
+
+
   return (
  <div className="App">
 
@@ -109,6 +133,12 @@ alt="First slide" />
 </div>
 </div>
 
+
+
+{/* Carrousel de imagenes */}
+<div className='m-5 p-5'>
+< CarouselContainer images ={images} />
+</div>
 
 <div className='mt-5 pt-5'>
 {/* Main image */}
