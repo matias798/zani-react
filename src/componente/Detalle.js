@@ -2,9 +2,9 @@ import React, { Component } from 'react'; //different
 import './../styles/Detalle.css';
 import CarouselContainer from './Carrousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Iconos from './Iconos';
 
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-// import { Carousel } from 'react-bootstrap';
 
 
 
@@ -70,7 +70,6 @@ for(let i = 4;i < items.resp.length; i ++){
 
   images.push({
     id: i ,
-    title: items.propiedad.descripcion,
     image:
     'https://api-zanni.herokuapp.com/images/' + items.resp[i].path,
   })
@@ -92,51 +91,64 @@ alt="First slide" />
 {/* /Main image */}
 
 
-<div className='d-flex justify-content-evenly m-4' >
+{/* segunda seccion */}
+<div id = 'segundaSeccion' className='d-flex justify-content-evenly m-4 ' >
 
+{/* Titulo */}
+<div className='m-3'>
+<h2 className='text-center'>{items.propiedad.titulo}</h2>
+{/* /Titulo */}
 
-{/* Texto */}
-<div className='texto m-5 p-5'>
-<h2 className='text-center p-5'>{items.propiedad.titulo}</h2>
-<p>{items.propiedad.descripcion}</p>
-{/* /Texto */}
+<div className=''>
+<Iconos className=''
+dormitorios={items.propiedad.dormitorios}
+baños={items.propiedad.baños}
+habitaciones={items.propiedad.habitaciones}/>
+</div>
+
 </div>
 
 {/* imagen */}
-<div className='m-5 p-5'>
+<div className='mediaresponsivec ml-auto'>
 <img
-          className="w-100 "
+          className="w-100 mediaresponsive"
           src={`https://api-zanni.herokuapp.com/images/${items.resp[1].path}`}
           alt="First slide"
         />
 </div>
 {/* /imagen */}
 </div>
-{/* /Segunda propiedad  */}
+{/* /segunda seccion */}
 
-<div  className='Propiedad mb-5 'to ={`/detalle/${items.propiedad.idpropiedad}`}>
+
+{/* Tercera seccion  */}
+<div id='tercerSeccion' className='Propiedad mb-5 rounded'to ={`/detalle/${items.propiedad.idpropiedad}`}>
 {/* imagen */}
-<div className='PropiedadesImageContainer'>
-<img
-          className="PropiedadesImage d-block"
+<div className='  '>
+<img     id='segundaSeccion'
+          className="DetalleImage "
           src={`https://api-zanni.herokuapp.com/images/${items.resp[2].path}`}
           alt="First slide"
         />
+
+
 </div>
 {/* /imagen */}
 
 
 {/* Texto */}
-<div className='texto m-5'>
-<h2>{items.propiedad.titulo}</h2>
-<p>{items.propiedad.descripcion}</p>
+<div className='texto '>
+<p id='textColor' >{items.propiedad.descripcion}</p>
+<p id='textColor' >{items.propiedad.direccion}</p>
+<p id='textColor' ><span>$</span>{items.propiedad.precio}</p>
 </div>
 </div>
+{/* Tercera seccion  */}
 
 
 
 {/* Carrousel de imagenes */}
-<div className='m-5 p-5'>
+<div className='Carrousel'>
 < CarouselContainer images ={images} />
 </div>
 

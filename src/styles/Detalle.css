@@ -1,5 +1,56 @@
-.Carousel{
-width: 75vw;
-display: flex;
-justify-content: center !important;
+#segundaSeccion{
+flex-wrap: nowrap;
+padding: 10%;
 }
+
+
+#tercerSeccion{
+    background-color: #1B4965;
+
+}
+
+
+#textColor{
+color:#CAE9FF;
+margin-bottom: 8%;
+margin-top: 12vh;
+
+}
+.Carrousel{
+    margin:  20% 10% 10% 10%;
+}
+
+.mediaresponsive{ 
+    padding: 0 !important;
+}
+
+#text{display: none;}
+
+
+.DetalleImage{
+    margin: 10px;
+    align-self: center;
+    width: 80vw;
+    height: 90vh;
+
+}
+
+@media(max-width:780px)
+{
+
+    #segundaSeccion{
+        flex-wrap: wrap;
+    }
+
+    #textTitle{
+        font-size: 2px !important;
+    }
+
+   .mediaresponsive{ 
+    margin: 0 !important;
+padding: 10% !important;}
+
+
+}
+
+

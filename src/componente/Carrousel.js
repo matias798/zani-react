@@ -14,8 +14,8 @@ const Carrousel = ({images}) => {
     <Slider className='slider__content'>
       {images.map((image) => (
         <div key={image.id} className='slider__content--item'>
-          <img src={image.image} alt={image.title} />
-          <p className='slider-description aligin-self-center'>{image.title}</p>
+          <img className='carouselImage' src={image.image} alt={image.title} />
+          <p id='text' className='slider-description aligin-self-center'>{image.title}</p>
         </div>
       ))}
     </Slider>

@@ -16,7 +16,7 @@ function Footer() {
     <div className=" ">
     
         
-        <a href="/contacto"> <h2 className="text-white">Contactanos </h2> </a>
+        <a href="/contacto"> <h2 className="text-white"> </h2> </a>
     
     <div>
         <a href="https://www.facebook.com/inmobiliariamarcelozanni" className="links">

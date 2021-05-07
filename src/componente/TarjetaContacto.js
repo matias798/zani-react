@@ -16,7 +16,7 @@ const TarjetaContacto = () => {
               <div className="row d-flex fw">
                 <div className="col-lg-4 col-md-4">
                   <div className="card-body d-flex align-items-center c-detail pl-0">
-                    <div className="mr-3 align-self-center pl-5">
+                    <div className="mr-3 align-self-center">
                       <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png" alt='icono direccion'/>
                     </div>
                     <div className="">

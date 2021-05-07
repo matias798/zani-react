@@ -57,3 +57,12 @@ word-wrap: break-word; width: 50vw;
 
     }
 }
+
+
+@media(max-width:780px)
+{
+    .PropiedadesImage{
+     height: 35vh;
+    }
+
+}

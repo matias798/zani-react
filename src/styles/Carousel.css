@@ -1,18 +1,18 @@
 
 .App {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 1000% ;
 }
 
 section {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 100% ;
 	position: relative;
 }
 
 .slider {
 	width: 100%;
-	height: 100vh;
+	height: 100% ;
 	overflow: hidden;
 	position: relative;
 }
@@ -27,16 +27,22 @@ section {
 	z-index: 100;
 	text-shadow: 0 0 0.5rem rgb(9, 9, 34);
 }
+
+
+.carouselImage{
+	height: 85vh ;
+}
+
 .slider__content,
 .slider__content--item {
 	width: 100%;
-	height: 100vh;
+	height: 85vh ;
 	position: relative;
 }
 
 .slider__content--item img {
 	width: 100%;
-	height: 100%;
+	height: 100% ;
 	object-fit: cover;
 }
 
@@ -49,4 +55,19 @@ section {
 	font-weight: bold;
 	padding: 1rem 1rem;
 	background-color: #2980b9;
+}
+
+
+@media(max-width:780px)
+{
+	.carouselImage{
+		height: 55vh ;
+	}
+
+
+	.slider__content,.slider
+	.slider__content--item,.slider-description {
+		height: 55vh ;
+	}
+
 }
