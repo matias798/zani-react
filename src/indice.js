@@ -46,6 +46,11 @@ class indice extends Component{
 render(){
 
   const { error, isLoaded, items } = this.state;
+
+
+
+
+  
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
@@ -53,11 +58,34 @@ render(){
   } 
 
   else {
+
+//Datos del carousel 
+  const images = [
+		{
+			id: '1',
+			title: items[1].titulo,
+			image:
+      'https://api-zanni.herokuapp.com/images/' + items[0].imagen_principal,
+		},
+		{
+			id: '2',
+			title: items[2].titulo,
+			image:
+      'https://api-zanni.herokuapp.com/images/' + items[1].imagen_principal,
+		},
+		{
+			id: '3',
+			title: items[3].titulo,
+			image:
+      'https://api-zanni.herokuapp.com/images/' + items[2].imagen_principal,
+		}
+	]
+//Datos del carousel 
+
   return (
  <div >
 {/* Carrousel de imagenes */}
- < CarouselContainer />
-
+ < CarouselContainer images ={images} />
 
  {/* Tarjeta contacto */}
  < TarjetaContacto />

@@ -4,6 +4,7 @@ import Detalle from './componente/Detalle';
 import Contacto from './componente/contacto';
 import Alquiler from './componente/Alquiler';
 import Venta from './componente/Venta';
+import SobreNosotros from './componente/SobreNosotros';
 import Footer from './componente/Footer';
 import Indice from './indice';
 
@@ -18,7 +19,7 @@ import {BrowserRouter as Router,Route }  from 'react-router-dom'
 class App extends Component{
 render(){
 
-
+  
 
 
   return (
@@ -46,6 +47,10 @@ render(){
 
 {/* venta */}
 < Route path ="/venta"  component={Venta} />
+
+
+{/* venta */}
+< Route path ="/sobre-nosotros"  component={SobreNosotros} />
 
  </Router>
 

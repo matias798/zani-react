@@ -53,7 +53,7 @@ render(){
    <div className="container d-flex justify-content-center align-items-center h-100">
       <div className="row ">
         {items.map((items,j) => (
-          <div  key={j} className="col-md-4 mt-5" >
+          <div  key={j} className="m-2" >
            
            
 <Link to ={`/detalle/${items.idpropiedad}`}>

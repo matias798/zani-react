@@ -21,7 +21,7 @@ const TarjetaContacto = () => {
                     </div>
                     <div className="">
                       <h3 className="font-weight-medium">Direccion</h3>
-                      <p >Tucumán 1445 <span className='pl-4 text-centerz'>Rosario </span> </p >
+                      <p >Tucumán 1445<br></br> <span className='pl-4 text-centerz'>Rosario </span> </p >
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const TarjetaContacto = () => {
                       <h3 className="font-weight-medium ">Email</h3>
                       <p id='email'>
 consultas@marcelozanni.com.ar
-                        <p> 123@wrappixel.com </p>
+                        <em> 123@wrappixel.com </em>
                       </p>
                     </div>
                   </div>

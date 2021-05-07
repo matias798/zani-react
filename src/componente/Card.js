@@ -13,7 +13,7 @@ function Card({ imagen, titulo,dormitorios, baños ,habitaciones, descripcion })
   return (
    
     
-   <div id='card' className="card text-center bg-white animate__animated animate__fadeInUp ">
+   <div id='card' className="card text-center bg-white animate__animated animate__fadeInUp m-3">
       <div className="overflow">
         <img src={urlimagen} alt="a wallpaper" className="card-img-top" />
       </div>

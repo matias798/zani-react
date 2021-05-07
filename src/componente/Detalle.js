@@ -1,4 +1,10 @@
 import React, { Component } from 'react'; //different
+import './../styles/Detalle.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+// import { Carousel } from 'react-bootstrap';
+
 
 
 class App extends Component{
@@ -37,10 +43,12 @@ class App extends Component{
     )
 }
 
+
+
+
+
 render(){
   const { error,isLoaded,items } = this.state;
-
-
 
  if (error) {
     return <div>Error: {error.message}</div>;
@@ -82,7 +90,7 @@ alt="First slide" />
 </div>
 {/* /Segunda propiedad  */}
 
-<div  className='Propiedad 'to ={`/detalle/${items.propiedad.idpropiedad}`}>
+<div  className='Propiedad mb-5 'to ={`/detalle/${items.propiedad.idpropiedad}`}>
 {/* imagen */}
 <div className='PropiedadesImageContainer'>
 <img
@@ -102,7 +110,6 @@ alt="First slide" />
 </div>
 
 
-
 <div className='mt-5 pt-5'>
 {/* Main image */}
 <img
@@ -115,41 +122,7 @@ alt="First slide" />
 
 
 
-<div className='mt-5 '>
-<div className='mt5 pt-5 d-flex justify-content-evenly'>
 
-
-<div >
-{/* Texto */}
-<div className='text-center '>
-<p>{items.propiedad.descripcion}</p>
-{/* /Texto */}
-</div>
-
-{/* imagen */}
-<div className=' d-flex align-items-end justify-content-start pt-5 mt-5'>
-<img
-          className=" align-self-center PropiedadesImage mt-5 pt-5 w-50 d-block"
-          src={`https://api-zanni.herokuapp.com/images/${items.resp[4].path}`}
-          alt="First slide"
-        />
-</div>
-{/* /imagen */}
-</div>
-
-
-{/* imagen */}
-<div >
-<img
-          className=" w-100 h-100 d-block"
-          src={`https://api-zanni.herokuapp.com/images/${items.resp[5].path}`}
-          alt="First slide"
-        />
-</div>
-{/* /imagen */}
-
-</div>
-</div>
 
 
 
