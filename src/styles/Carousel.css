@@ -70,4 +70,8 @@ section {
 		height: 55vh ;
 	}
 
+	.lastMainImage{
+		margin:0 !important;
+	}
+
 }

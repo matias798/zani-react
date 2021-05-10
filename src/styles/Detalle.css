@@ -1,4 +1,8 @@
+.height-75{height: 75vh;
+width: 50vw;}
+
 .height-100{height: 100vh;}
+.height-120{height: 120vh; width: 100vw;}
 
 
 #segundaSeccion{
@@ -27,6 +31,9 @@ margin-top: 12vh;
 
 #text{display: none;}
 
+.carouselDetalle{
+    margin: 10% !important;
+}
 
 .DetalleImage{
     align-self: center;
@@ -37,6 +44,13 @@ margin-top: 12vh;
 
 @media(max-width:780px)
 {
+.height-120{height: 50vh;}
+.height-75{height: 40vh;width: 75vw;}
+
+.segundaSeccionImage{
+    display: flex;
+    justify-content: center;
+}
 
     #segundaSeccion{
         flex-wrap: wrap;
@@ -58,6 +72,11 @@ padding: 10% !important;}
     width: 80vw;
     height: 40vh;
 
+}
+
+
+.carouselDetalle{
+    margin: 0% !important;
 }
 
 }

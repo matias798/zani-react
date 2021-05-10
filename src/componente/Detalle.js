@@ -85,7 +85,7 @@ for(let i = 4;i < items.resp.length; i ++){
 
 {/* Main image */}
 <img
-className="d-block h-50 w-100"
+className="d-block height-120 w-100"
 src={`https://api-zanni.herokuapp.com/images/${items.resp[0].path}`}
 alt="First slide" />
 {/* /Main image */}
@@ -111,7 +111,7 @@ habitaciones={items.propiedad.habitaciones}/>
 {/* imagen */}
 <div className='mediaresponsivec ml-auto'>
 <img
-          className="w-100 mediaresponsive"
+          className=" segundaSeccionImage height-75 mediaresponsive"
           src={`https://api-zanni.herokuapp.com/images/${items.resp[1].path}`}
           alt="First slide"
         />
@@ -148,30 +148,21 @@ habitaciones={items.propiedad.habitaciones}/>
 
 
 {/* Carrousel de imagenes */}
-<div className='height-100 m-5'>
+<div className='height-100 carouselDetalle '>
 < CarouselContainer images ={images} />
 </div>
 
 
 
 
-<div className='mt-5 pt-5'>
+<div className=''>
 {/* Main image */}
 <img
-className="d-block  w-100"
+className="d-block h-100 w-100 lastMainImage"
 src={`https://api-zanni.herokuapp.com/images/${items.resp[3].path}`}
 alt="First slide" />
 {/* /Main image */}
 </div>
-
-
-
-
-
-
-
-
-
 
     </div>
   );}
