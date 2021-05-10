@@ -1,0 +1,14 @@
+.FooterWraper{flex-wrap: wrap; }
+
+.FooterColor{
+    padding-top: 3em;
+    color: #DAF7DC;
+    background-color: #2F4858;
+padding-bottom: 3em;
+}
+.FooterIcons{
+    margin: 0;
+    width: 8em;
+    color: #DAF7DC;
+
+}

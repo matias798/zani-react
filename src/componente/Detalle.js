@@ -84,15 +84,15 @@ for(let i = 4;i < items.resp.length; i ++){
  <div className="App">
 
 {/* Main image */}
-<img
+<img id='mainImage'
 className="d-block height-120 w-100"
 src={`https://api-zanni.herokuapp.com/images/${items.resp[0].path}`}
-alt="First slide" />
+alt="First slide" autofocus/>
 {/* /Main image */}
 
 
 {/* segunda seccion */}
-<div id = 'segundaSeccion' className='d-flex justify-content-evenly m-4 ' >
+<div id = 'segundaSeccion' className='d-flex justify-content-evenly m-4 ' autofocus>
 
 {/* Titulo */}
 <div className='m-3'>
@@ -164,6 +164,10 @@ alt="First slide" />
 {/* /Main image */}
 </div>
 
+<script>componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+</script>
     </div>
   );}
   }

@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className="Navbar">
+    <div className="Navbar mb-2 mx-2">
 
 
       

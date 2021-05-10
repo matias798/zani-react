@@ -52,12 +52,13 @@ render(){
 {/* venta */}
 < Route path ="/sobre-nosotros"  component={SobreNosotros} />
 
- </Router>
 
 
  {/* Footer */}
  <Footer />
  {/* /Footer */}
+ </Router>
+
 
     </div>
   );

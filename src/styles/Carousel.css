@@ -32,6 +32,8 @@ section {
 .carouselImage{
 	height: 85vh ;
 }
+#text{display: block;}
+
 
 .slider__content,
 .slider__content--item {
@@ -54,7 +56,6 @@ section {
 	font-size: 2.5rem;
 	font-weight: bold;
 	padding: 1rem 1rem;
-	background-color: #2980b9;
 }
 
 

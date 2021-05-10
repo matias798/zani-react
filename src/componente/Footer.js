@@ -1,46 +1,57 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './../styles/Footer.css';
+import { FiFacebook } from "react-icons/fi";
+import { FiInstagram } from "react-icons/fi";
+import { TiSocialPinterest } from "react-icons/ti";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { FiLinkedin } from "react-icons/fi";
+
 
 function Footer() {
 
   return (
-    <footer>
-    <div className="d-flex justify-content-around ">
-    <div>
-        <h2 className="text-white">Terminos y condiciones</h2>
-        <div> <a className="white_font links" href="/">Copyright Notice</a> </div>
+    <section className='FooterColor'>
+   
+<div className="d-flex justify-content-around FooterWraper ">
+
+   <div>
+    <h2 className="text-white text-center">Terminos y condiciones</h2>
+    <div className="text-center"><a  href="/">Copyright Notice</a> </div>
+
+<div className="text-center"><a  href="/sobre-nosotros">Sobre nosotros</a> </div>
+</div>
+
+
+<div>
+<h2 className="text-white  text-center  m-2">Redes sociales</h2>
+
+
+    <a href="https://www.facebook.com/inmobiliariamarcelozanni" >
+    <FiFacebook className="FooterIcons" />
+    </a>
+
+    <a href="https://www.instagram.com/inmobiliariamarcelozanni/" >
+    <FiInstagram className="FooterIcons" />
+    </a>
+
+    <a href="https://ar.pinterest.com/inmobiliariamarcelozanni/" >
+ <TiSocialPinterest className="FooterIcons" />
+    </a>
     
-    <div>  <a className="white_font links" href="/sobre-nosotros">Sobre nosotros</a> </div>
-    </div>
+    <a href="https://www.youtube.com/channel/UCbRermRAC4U0pAMeFV1xrww?reload=9&view_as=subscriber" >
+ <AiOutlineYoutube className="FooterIcons" />
+    </a>
     
-    
-    <div className=" ">
-    
-        
-        <a href="/contacto"> <h2 className="text-white"> </h2> </a>
-    
-    <div>
-        <a href="https://www.facebook.com/inmobiliariamarcelozanni" className="links">
-        <i className="fab fa-facebook white_font mr-4"></i>
-        </a>
-    
-        <a href="https://www.instagram.com/inmobiliariamarcelozanni/" className="links">
-      <i className="fab fa-instagram white_font mr-4"></i>
-        </a>
-    
-        <a href="https://ar.pinterest.com/inmobiliariamarcelozanni/" className="links">
-     <i className="fab fa-pinterest white_font mr-4"></i>  
-        </a>
-        
-        <a href="https://www.youtube.com/channel/UCbRermRAC4U0pAMeFV1xrww?reload=9&view_as=subscriber" className="links"><i className="fab fa-youtube white_font mr-4"></i> 
-        </a>
-        
-    
-        <a href="https://www.linkedin.com/in/inmobiliariamarcelozannirosario/" className="links"><i className="fab fa-linkedin white_font mr-4"></i> 
-        </a>
-    </div>
-    </div>
-    </div>
-    </footer>
+
+    <a href="https://www.linkedin.com/in/inmobiliariamarcelozannirosario/" >
+ <FiLinkedin className="FooterIcons" />
+    </a>
+</div>
+
+</div>
+
+
+    </section>
     
   );
 }
