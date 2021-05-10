@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import Card from "./Card";
 import { Link } from 'react-router-dom';
+import Spinner from './Spinner';
 
 
 class Alquiler extends Component{
@@ -45,7 +46,7 @@ render(){
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+ return <Spinner />;
   } 
 
   else {

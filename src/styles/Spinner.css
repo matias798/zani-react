@@ -1,0 +1,12 @@
+.spinnerContainer{
+    margin: 40vh;
+}
+
+
+@media(max-width:780px)
+{
+    .spinnerContainer{
+        margin:  30vh 20vh 40vh 20vh;
+    }
+
+}

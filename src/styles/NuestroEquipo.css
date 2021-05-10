@@ -23,6 +23,7 @@
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     position: absolute;
+    
     width: 150%;
     height: 80px;
     bottom: -45px;

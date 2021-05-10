@@ -34,21 +34,21 @@ Aconsejándoles la mejor manera de realizar sus transacciones inmobiliarias. Dis
 <div className="sobreNosotrosImg">
 
  <div>
-    <img className="sobreNosotrosImages" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/edificio-fuentes-640x480.jpg" alt="" className="width-52"/>
+    <img className="sobreNosotrosImages width-52" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/edificio-fuentes-640x480.jpg" alt="" />
 </div>
     
 
 
 <div>
-    <img className="sobreNosotrosImages"src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/Logo-240-640x480.png" alt="" className='width-60'/>
+    <img className="sobreNosotrosImages width-60"src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/Logo-240-640x480.png" alt="" />
 </div>
 
 <div>
-    <img className="sobreNosotrosImages" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/COCIR-transparente-1-640x480.jpg" alt="" className='width-60'/>
+    <img className="sobreNosotrosImages width-60" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/COCIR-transparente-1-640x480.jpg" alt="" />
 </div>
 
 <div>
-    <img className="sobreNosotrosImages" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/CEIR-transparente-1-640x480.jpg" alt="" className='width-60 height-90'/>
+    <img className="sobreNosotrosImages width-60 height-90" src="https://marcelozanni.com.ar/wp-content/uploads/2020/11/CEIR-transparente-1-640x480.jpg" alt="" />
 </div>
 </div>
 </div>

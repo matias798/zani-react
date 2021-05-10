@@ -2,7 +2,7 @@ import Propiedades from './componente/Propiedades';
 import CarouselContainer from './componente/Carrousel';
 import NuestroEquipo from './componente/NuestroEquipo';
 import TarjetaContacto from './componente/TarjetaContacto';
-
+import Spinner from './componente/Spinner';
 
 
 
@@ -54,8 +54,9 @@ render(){
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
-  } 
+  
+ return <Spinner />;
+      } 
 
   else {
 

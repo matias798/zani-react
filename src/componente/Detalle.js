@@ -3,8 +3,8 @@ import './../styles/Detalle.css';
 import CarouselContainer from './Carrousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Iconos from './Iconos';
+import Spinner from './Spinner';
 
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 
 
@@ -54,7 +54,7 @@ render(){
  if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+ return <Spinner />;
   } 
 
   else {
@@ -100,7 +100,7 @@ alt="First slide" />
 {/* /Titulo */}
 
 <div className=''>
-<Iconos className=''
+<Iconos className='d-flex justify-content-center'
 dormitorios={items.propiedad.dormitorios}
 baños={items.propiedad.baños}
 habitaciones={items.propiedad.habitaciones}/>
@@ -148,9 +148,12 @@ habitaciones={items.propiedad.habitaciones}/>
 
 
 {/* Carrousel de imagenes */}
-<div className='Carrousel'>
+<div className='height-100 m-5'>
 < CarouselContainer images ={images} />
 </div>
+
+
+
 
 <div className='mt-5 pt-5'>
 {/* Main image */}
