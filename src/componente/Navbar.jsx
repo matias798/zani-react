@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className="Navbar mb-2 mx-2">
+    <div className="Navbar mb-3 mx-2">
 
 
       
@@ -34,21 +34,21 @@ function Navbar() {
       
 
       <li className="nav-item p-3 ">
-        <Link className="nav-link links nounderline " to="/"> <i className="fa fa-home" aria-hidden="true"></i> Home </Link>
+        <Link className="nav-link links nounderline " to="/"> <p> Home </p></Link>
 
 
       </li>
 
       <li className="nav-item p-3">
-      <Link className="nav-link links nounderline " to="/alquiler">Alquiler</Link>
+      <Link className="nav-link links nounderline " to="/alquiler"><p>Alquiler</p></Link>
     </li>
 
   <li className="nav-item p-3">
-    <Link className="nav-link links nounderline " to="/venta">Venta</Link>
+    <Link className="nav-link links nounderline " to="/venta"><p>Venta</p></Link>
   </li>
 
   <li className="nav-item p-3">
-        <Link className="nav-link links nounderline " to="/contacto">Contactanos</Link>
+        <Link className="nav-link links nounderline " to="/contacto"><p>Contactanos</p></Link>
       </li>
 
     </ul>

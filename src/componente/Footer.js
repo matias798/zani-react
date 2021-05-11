@@ -23,27 +23,27 @@ function Footer() {
 
 
 <div>
-<h2 className="text-white  text-center  m-2">Redes sociales</h2>
+<h2 className="text-white  text-center  m-2 mb-4">Redes sociales</h2>
 
 
-    <a href="https://www.facebook.com/inmobiliariamarcelozanni" >
+    <a href="https://www.facebook.com/inmobiliariamarcelozanni" className="FooterIcons">
     <FiFacebook className="FooterIcons" />
     </a>
 
-    <a href="https://www.instagram.com/inmobiliariamarcelozanni/" >
+    <a href="https://www.instagram.com/inmobiliariamarcelozanni/"className="FooterIcons" >
     <FiInstagram className="FooterIcons" />
     </a>
 
-    <a href="https://ar.pinterest.com/inmobiliariamarcelozanni/" >
+    <a href="https://ar.pinterest.com/inmobiliariamarcelozanni/" className="FooterIcons" >
  <TiSocialPinterest className="FooterIcons" />
     </a>
     
-    <a href="https://www.youtube.com/channel/UCbRermRAC4U0pAMeFV1xrww?reload=9&view_as=subscriber" >
+    <a href="https://www.youtube.com/channel/UCbRermRAC4U0pAMeFV1xrww?reload=9&view_as=subscriber" className="FooterIcons">
  <AiOutlineYoutube className="FooterIcons" />
     </a>
     
 
-    <a href="https://www.linkedin.com/in/inmobiliariamarcelozannirosario/" >
+    <a href="https://www.linkedin.com/in/inmobiliariamarcelozannirosario/" className="FooterIcons">
  <FiLinkedin className="FooterIcons" />
     </a>
 </div>

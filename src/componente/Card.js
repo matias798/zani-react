@@ -20,7 +20,7 @@ function Card({ imagen, titulo,dormitorios, baños ,habitaciones, descripcion })
       <div className="card-body p-5 max-size">
       
 
-        <h4 className='p-3'>{titulo}</h4>
+        <h4 className='p-1'>{titulo}</h4>
         <p className="card-text text-start text-muted max-size"> {descripcion} </p>
         
  {/*iconos  */}

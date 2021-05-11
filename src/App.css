@@ -34,11 +34,6 @@ p{
 
 }
 
-.logo{
-max-width: 55px;
-background-color: #fff;
-border-radius: 5px;
-}
 a{font-size: 14px;
 color: #ffffff;
 }
@@ -71,25 +66,6 @@ color: #AAA;
  width: 150px;
 }
 
-/**Footer**/
-
-footer {
-display:inline;
-}
-
-footer{
-background-color:#273746;
-padding: 15px;   
-}
-
-
-.footer_context_container{
-margin : 0 20px 15px 20px;
-display: flex;
-justify-content: space-around;
-flex-direction: row;
-}
-/**End Footer**/
 .SobreNotros{
 margin-top:17vh ;
 margin-bottom:20px ;
@@ -104,15 +80,9 @@ margin-top: 30px;}
 
 .sobreNosotrosImages{border-radius: 10px;}
 
-/* botones del carousel de tarjetas */
-.controls-top{
-display: flex;
-justify-content: flex-end;
-padding-bottom: 15px;
-}
 
 body{margin-top:20px;
-background:#eee;
+background:#ffffff;
 }
 
 .mobileCarousel{background-size:cover}

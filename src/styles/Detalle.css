@@ -41,6 +41,21 @@ margin-top: 12vh;
     height: 100vh;
 
 }
+.enviarMesaje{
+width: 20%;
+z-index: 3;
+display: flex;
+justify-content: center !important;
+border: 1px solid gray;
+background-color: #ffffff;
+bottom:0;
+right:0;
+position: absolute;
+}
+
+.lastMainImage{
+    position: block;
+}
 
 @media(max-width:780px)
 {
