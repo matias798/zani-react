@@ -63,20 +63,20 @@ render(){
 //Datos del carousel 
   const images = [
 		{
-			id: items[1].idpropiedad,
-			title: items[1].titulo,
+			id: items[0].idpropiedad,
+			title: items[0].titulo,
 			image:
       'https://api-zanni.herokuapp.com/images/' + items[0].imagen_principal,
 		},
 		{
-			id: items[2].idpropiedad,
-			title: items[2].titulo,
+			id: items[1].idpropiedad,
+			title: items[1].titulo,
 			image:
       'https://api-zanni.herokuapp.com/images/' + items[1].imagen_principal,
 		},
 		{
-			id: items[3].idpropiedad,
-			title: items[3].titulo,
+			id: items[2].idpropiedad,
+			title: items[2].titulo,
 			image:
       'https://api-zanni.herokuapp.com/images/' + items[2].imagen_principal,
 		}

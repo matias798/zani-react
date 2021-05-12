@@ -10,6 +10,7 @@ const Propiedades = ({items}) => {
  let image2 = 'https://api-zanni.herokuapp.com/images/' + items[4].imagen_principal;
  let image3 = 'https://api-zanni.herokuapp.com/images/' + items[5].imagen_principal;
 
+ 
 
 
   return (
@@ -32,11 +33,12 @@ const Propiedades = ({items}) => {
 
 {/* Texto */}
 <div className='texto m-5'>
-<h2>{items[0].titulo}</h2>
-<p>{items[0].descripcion}</p>
+<h2>{items[3].titulo}</h2>
+{image1}
+<p>{items[3].descripcion}</p>
 
 {/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[0].idpropiedad}`}>
+<Link to ={`/detalle/${items[3].idpropiedad}`}>
  <div>
  <button className='btn btn-secondary-lg text-center'>Ver más</button>
  </div>
@@ -52,9 +54,9 @@ const Propiedades = ({items}) => {
 {/* iconos */}
 <div className='m-5'>
 <Iconos 
-dormitorios={items[0].dormitorios}
-baños={items[0].baños}
-habitaciones={items[0].habitaciones}/>
+dormitorios={items[3].dormitorios}
+baños={items[3].baños}
+habitaciones={items[3].habitaciones}/>
 </div>
 
 {/* /Primer propiedad  */}
@@ -69,13 +71,13 @@ habitaciones={items[0].habitaciones}/>
 
 {/* Texto */}
 <div className='texto m-5'>
-<h2>{items[1].titulo}</h2>
-<p>{items[1].descripcion}</p>
+<h2>{items[4].titulo}</h2>
+<p>{items[4].descripcion}</p>
 
 
 
 {/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[1].idpropiedad}`}>
+<Link to ={`/detalle/${items[4].idpropiedad}`}>
  <div>
  <button className='btn btn-secondary-lg text-center'>Ver más</button>
  </div>
@@ -98,9 +100,9 @@ habitaciones={items[0].habitaciones}/>
 
 <div className=' d-flex justify-content-end text-right m-5'>
 <Iconos 
- dormitorios={items[1].dormitorios}
- baños={items[1].baños}
- habitaciones={items[1].habitaciones}
+ dormitorios={items[4].dormitorios}
+ baños={items[4].baños}
+ habitaciones={items[4].habitaciones}
 />
 
 </div>
@@ -126,12 +128,12 @@ habitaciones={items[0].habitaciones}/>
 
 {/* Texto */}
 <div className='texto m-5'>
-<h2>{items[2].titulo}</h2>
-<p>{items[2].descripcion}</p>
+<h2>{items[5].titulo}</h2>
+<p>{items[5].descripcion}</p>
 
 
 {/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[2].idpropiedad}`}>
+<Link to ={`/detalle/${items[5].idpropiedad}`}>
  <div>
  <button className='btn btn-secondary-lg text-center'>Ver más</button>
  </div>
@@ -144,9 +146,9 @@ habitaciones={items[0].habitaciones}/>
 
 {/* iconos */}
 <div className='m-5'> <Iconos
- dormitorios={items[2].dormitorios}
- baños={items[2].baños}
- habitaciones={items[2].habitaciones}
+ dormitorios={items[5].dormitorios}
+ baños={items[5].baños}
+ habitaciones={items[5].habitaciones}
  />
 </div>
 
