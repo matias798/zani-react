@@ -14,14 +14,16 @@ import Indice from './indice';
 
 import React, { Component } from 'react'; //different
 
-import {BrowserRouter as Router,Route }  from 'react-router-dom'
+import {BrowserRouter as Router,Switch,Route }  from 'react-router-dom'
 
 class App extends Component{
+
+
+
 render(){
 
+
   
-
-
   return (
  <div className="App">
 <Router>
@@ -29,7 +31,7 @@ render(){
  {/* navegacion */}
  <Navbar />
  {/* /navegacion */}
-
+ <Switch>
 
 <Route path ="/" exact component={Indice} />
 
@@ -52,7 +54,7 @@ render(){
 {/* venta */}
 < Route path ="/sobre-nosotros"  component={SobreNosotros} />
 
-
+</Switch>
 
  {/* Footer */}
  <Footer />

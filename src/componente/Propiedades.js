@@ -34,7 +34,6 @@ const Propiedades = ({items}) => {
 {/* Texto */}
 <div className='texto m-5'>
 <h2>{items[3].titulo}</h2>
-{image1}
 <p>{items[3].descripcion}</p>
 
 {/* Link que dirige al detalle del producto */}
