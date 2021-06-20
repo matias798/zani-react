@@ -30,10 +30,10 @@ class App extends Component {
             <Route path="/" exact component={HomePage} />
 
             {/* Propiedad de forma detallada */}
-            <Route path="/Detail/:id" component={Detail} />
+            <Route path="/Detalle/:id" component={Detail} />
 
             {/* Contact */}
-            <Route path="/Contact" component={Contact} />
+            <Route path="/Contacto" component={Contact} />
 
             {/* alquiler */}
             <Route path="/alquiler" component={Rent} />

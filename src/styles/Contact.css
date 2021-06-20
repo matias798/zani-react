@@ -1,0 +1,35 @@
+#contactUsContainer {
+  display: flex;
+}
+
+#contactUsForm {
+  width: 25vw;
+}
+
+#contactTitle {
+  font-weight: bolder;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#contactUsImage {
+  width: 45vw;
+}
+
+.ContactButton {
+  display: flex;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+@media (max-width: 780px) {
+  #contactUsForm {
+    width: 85vw;
+  }
+
+  #contactUsImage {
+    width: 60vw;
+    height: 40vh;
+  }
+}

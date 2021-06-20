@@ -1,63 +1,98 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Swal from 'sweetalert2'
+/* Importing Local Ilustration */
+import ContactUsIlustration from "./../imagenes/ContactUsIlustration.jpg";
 
+//Bootsrap styles
+import "bootstrap/dist/css/bootstrap.min.css";
 
+/* Local Styles */
+import "./../styles/Contact.css";
 
+/* sweet alert gives nice alerts when used */
+import Swal from "sweetalert2";
 
 function Contacto() {
-
-
-function sendAlert(){
-  Swal.fire({
-    position: 'center',
-    icon: 'success',
-    title: 'Tu mensaje fue enviado con exito!!',
-    showConfirmButton: false,
-    timer: 1500
-  })
-}
-
-
   return (
-    <div className="container p-4 mb-5 mt-2 ">
-    <form method="POST" target="/new-entry" className="form-group">
+    <div className="d-flex justify-content-center flex-wrap-reverse ">
+      {/* Conteiner of forms in contact us */}
+      <div id="contactUsForm" className="container">
+        {/* Title */}
+        <h5 id="contactTitle"> Envianos un mensaje!</h5>
 
-    
-        <div className="text-left p-5 " >
-            <label htmlFor="title"><h2>Nombre (obligatorio)</h2></label>
-            <input name="Nombre" type="text" className="form-control"  autoFocus required/>
+        {/* Form inputs*/}
+        <form method="POST" target="/new-entry" className="form-group">
+          {/* Name */}
+          <div className="text-left mt-2  ">
+            <label htmlFor="title">Nombre</label>
+            <input
+              name="Nombre"
+              type="text"
+              className="form-control"
+              autoFocus
+              required
+            />
           </div>
+          {/* Name */}
 
+          {/* Email */}
+          <div className="text-left mt-2 ">
+            <label htmlFor="Email">Correo electrónico</label>
+            <input
+              name="Email"
+              type="email"
+              className="form-control"
+              autoFocus
+              required
+            />
+          </div>
+          {/* /Email */}
 
-      <div className="text-left p-5" >
-        <label htmlFor="Email"><h2>Correo electrónico (obligatorio)</h2></label>
-        <input name="Email" type="email" className="form-control"  autoFocus required/>
+          {/* Message */}
+          <div className="text-left mt-2 ">
+            <label htmlFor="Mensaje">Mensaje</label>
+            <textarea
+              name="Mensaje"
+              className="form-control"
+              rows="3"
+              autoFocus
+            ></textarea>
+          </div>
+          {/* /Message */}
+
+          {/* Button */}
+          <div>
+            <button
+              className="btn btn-primary ContactButton mt-2 "
+              onClick={() => sendAlert()}
+            >
+              Enviar
+            </button>
+          </div>
+          {/* Button */}
+        </form>
+
+        {/* Form inputs*/}
       </div>
+      {/* /Conteiner of forms in contact us */}
 
-
-      <div className="text-left p-5" >
-        <label htmlFor="Asunto"><h2>Asunto</h2></label>
-        <input name="Asunto" type="text" className="form-control"  autoFocus />
+      {/* Ilustration */}
+      <div>
+        <img src={ContactUsIlustration} id="contactUsImage" alt="" />
       </div>
-
-
-
-      <div className="text-left p-5" >
-        <label htmlFor="Mensaje"><h2>Tu mensaje </h2></label>
-        <textarea name="Mensaje"  className="form-control" rows="3" autoFocus></textarea>
-        </div>
-
-<div className='d-flex justify-content-end'>
-<button className='btn btn-primary m-5'onClick={()=>sendAlert()} >Enviar</button>
-</div>
-    
-    
-    </form>
-
-  </div>
+      {/* /Ilustration */}
+    </div>
   );
+  /****************************/
+  /******** Functions ********/
+  /**************************/
+
+  function sendAlert() {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Tu mensaje fue enviado con exito!!",
+      timer: 1500,
+    });
+  }
 }
 
-export
-
-default Contacto;
+export default Contacto;

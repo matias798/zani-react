@@ -8,7 +8,7 @@ import 'animate.css/animate.min.css'
 
 function Card({ imagen, titulo,dormitorios, baños ,habitaciones, descripcion }) {
 
-  let urlimagen = 'https://api-zanni.herokuapp.com/images/' + imagen;
+  let urlimagen =  imagen;
 
   return (
    
