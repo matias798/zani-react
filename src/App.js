@@ -1,69 +1,56 @@
-import './App.css';
-import Navbar from './componente/Navbar';
-import Detalle from './componente/Detalle';
-import Contacto from './componente/contacto';
-import Alquiler from './componente/Alquiler';
-import Venta from './componente/Venta';
-import SobreNosotros from './componente/SobreNosotros';
-import Footer from './componente/Footer';
-import Indice from './indice';
+import React, { Component } from "react"; 
+
+/* Importing React router  */
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+/* Local styles */
+import "./App.css";
+
+/* Components */
+import Navbar from "./componente/Navbar";
+import Detail from "./componente/Detail";
+import Contact from "./componente/Contact";
+import Rent from "./componente/Rent";
+import Sale from "./componente/Sale";
+import AboutUs from "./componente/AboutUs";
+import Footer from "./componente/Footer";
+import HomePage from "./HomePage";
 
 
 
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          {/* navegacion */}
+          <Navbar />
+          {/* /navegacion */}
+          <Switch>
+            <Route path="/" exact component={HomePage} />
 
+            {/* Propiedad de forma detallada */}
+            <Route path="/Detail/:id" component={Detail} />
 
-import React, { Component } from 'react'; //different
+            {/* Contact */}
+            <Route path="/Contact" component={Contact} />
 
-import {BrowserRouter as Router,Switch,Route }  from 'react-router-dom'
+            {/* alquiler */}
+            <Route path="/alquiler" component={Rent} />
 
-class App extends Component{
+            {/* venta */}
+            <Route path="/venta" component={Sale} />
 
+            {/* venta */}
+            <Route path="/sobre-nosotros" component={AboutUs} />
+          </Switch>
 
-
-render(){
-
-
-  
-  return (
- <div className="App">
-<Router>
- 
- {/* navegacion */}
- <Navbar />
- {/* /navegacion */}
- <Switch>
-
-<Route path ="/" exact component={Indice} />
-
-
- {/* Propiedad de forma detallada */}
- < Route path ="/detalle/:id"  component={Detalle} />
-
-
-
-{/* Contacto */}
-< Route path ="/contacto"  component={Contacto} />
-
-{/* alquiler */}
-< Route path ="/alquiler"  component={Alquiler} />
-
-{/* venta */}
-< Route path ="/venta"  component={Venta} />
-
-
-{/* venta */}
-< Route path ="/sobre-nosotros"  component={SobreNosotros} />
-
-</Switch>
-
- {/* Footer */}
- <Footer />
- {/* /Footer */}
- </Router>
-
-
-    </div>
-  );
+          {/* Footer */}
+          <Footer />
+          {/* /Footer */}
+        </Router>
+      </div>
+    );
   }
 }
 export default App;
