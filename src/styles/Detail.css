@@ -36,7 +36,18 @@ height:4rem;
 }
 
 
+.hideOnPc{
+  display: none;
+}
 @media(max-width:780px){
+
+  .showOnMobile{
+    display: block;
+      
+  }
+  .hideOnMobileVersion{
+    display: none;
+  }
 
   /* image smaller height in mobile version*/
   #mainImage {

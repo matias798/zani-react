@@ -1,79 +1,69 @@
-.Propiedad{
-    margin-top: 6%;
-    display: flex;
-    justify-content: space-evenly;
+.Propiedad {
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.btn-primary{
-    border:none;
-background-color:#50A7B8;}
-
-
-.btn-primary:hover{
-
-    background-color:#207D98;
+.btn-primary {
+  border: none;
+  background-color: #50a7b8;
 }
 
-
-
-#PropiedadesImageContainer2{
-    justify-content: end;
-
+.btn-primary:hover {
+  background-color: #207d98;
 }
 
-.PropiedadesImage{
-    width: 70vw;
- height: 80vh;
+#PropiedadesImageContainer2 {
+  justify-content: end;
+}
+
+.PropiedadesImage {
+  width: 70vw;
+  height: 80vh;
 }
 
 .descripcion_propiedad {
-color: #AAA;
-text-align: center;
-word-wrap: break-word; width: 50vw;
+  color: #aaa;
+  text-align: center;
+  word-wrap: break-word;
+  width: 50vw;
 }
 
-
-.PropiedadesIcons{
-    margin: 5%;
+.PropiedadesIcons {
+  margin: 5%;
 }
 
-@media(max-width:640px)
-{
-
-    .Propiedad{
-    justify-content: center;
+@media (max-width: 640px) {
+  .Propiedad {
+    justify-content: center !important;
     flex-wrap: wrap;
-    }
+  }
 
+  #Propiedad2 {
+    justify-content: center!important;
+    flex-wrap: wrap-reverse;
+  }
 
-    #Propiedad2{
-    justify-content: center;
-    flex-wrap: wrap-reverse
-     }
-    
-   
-    .PropiedadesImageContainer{
-        display: flex;
-        justify-content: center;
-    }
-#PropiedadesImageContainer2{
-    justify-content: center;
+  .PropiedadesImageContainer {
+    display: flex ;
+    justify-content: center!important;
+  }
+  #PropiedadesImageContainer2 {
+    justify-content: center!important;
+  }
+
+  .PropiedadesImage {
+    margin: 10px;
+    align-self: center;
+    width: 70%;
+  }
 
 }
 
-    .PropiedadesImage{
-        margin: 10px;
-        align-self: center;
-        width: 70%;
-
-    }
-}
+@media (max-width: 780px) {
 
 
-@media(max-width:780px)
-{
-    .PropiedadesImage{
-     height: 35vh;
-    }
-
+  .PropiedadesImage {
+    height: 35vh;
+  }
 }

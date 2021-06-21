@@ -1,163 +1,139 @@
-import './../styles/Propiedad.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-import Iconos from './Iconos';
 
+import "./../styles/Propiedad.css";
+import "./../App.css";
 
-const Propiedades = ({items}) => {
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+import Iconos from "./Iconos";
 
- let image1 =  items[3].imagen_principal;
- let image2 =  items[4].imagen_principal;
- let image3 =  items[5].imagen_principal;
-
- 
-
+const Propiedades = ({ items }) => {
+  let image1 = items[3].imagen_principal;
+  let image2 = items[4].imagen_principal;
+  let image3 = items[5].imagen_principal;
 
   return (
-<div>
-    
-{/* Primer propiedad  */}
+    <div>
+      {/* Primer propiedad  */}
 
-<div  className="Propiedad">
+      <div className="Propiedad">
+        {/* imagen */}
+        <div className="PropiedadesImageContainer">
+          <img
+            className="PropiedadesImage d-block"
+            src={image1}
+            alt="First slide"
+          />
+        </div>
+        {/* /imagen */}
 
-{/* imagen */}
-<div className='PropiedadesImageContainer'>
-<img
-          className="PropiedadesImage d-block"
-          src={image1}
-          alt="First slide"
+        {/* Texto */}
+        <div className="texto m-5">
+          <h2>{items[3].titulo}</h2>
+          <p>{items[3].descripcion}</p>
+
+          {/* Link que dirige al detalle del producto */}
+          <Link to={`/detalle/${items[3].idpropiedad}`}>
+            <div>
+              <button className="btn btn-primary ">Ver más</button>
+            </div>
+          </Link>
+          {/* /link que dirige al detalle del producto */}
+        </div>
+      </div>
+
+      {/* iconos */}
+      <div className="m-5 hideOnMobileVersion">
+        <Iconos
+          dormitorios={items[3].dormitorios}
+          baños={items[3].baños}
+          habitaciones={items[3].habitaciones}
         />
-</div>
-{/* /imagen */}
+      </div>
 
+      {/* /Primer propiedad  */}
 
-{/* Texto */}
-<div className='texto m-5'>
-<h2>{items[3].titulo}</h2>
-<p>{items[3].descripcion}</p>
+      {/* Segunda propiedad  */}
 
-{/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[3].idpropiedad}`}>
- <div>
- <button className='btn btn-primary '>Ver más</button>
- </div>
-</Link>
-{/* /link que dirige al detalle del producto */}
+      <div className="Propiedad " id="Propiedad2">
+        {/* Texto */}
+        <div className="texto m-5">
+          <h2>{items[4].titulo}</h2>
+          <p>{items[4].descripcion}</p>
 
-</div>
+          {/* Link que dirige al detalle del producto */}
+          <Link to={`/detalle/${items[4].idpropiedad}`}>
+            <div>
+              <button className="btn btn-primary text-center">Ver más</button>
+            </div>
+          </Link>
+          {/* /link que dirige al detalle del producto */}
+        </div>
+        {/* imagen */}
+        <div
+          className=" PropiedadesImageContainer d-flex "
+          id="PropiedadesImageContainer2"
+        >
+          <img
+            className="PropiedadesImage d-block"
+            src={image2}
+            alt="First slide"
+          />
+        </div>
+        {/* /imagen */}
+      </div>
 
-
-
-</div>
-
-{/* iconos */}
-<div className='m-5'>
-<Iconos 
-dormitorios={items[3].dormitorios}
-baños={items[3].baños}
-habitaciones={items[3].habitaciones}/>
-</div>
-
-{/* /Primer propiedad  */}
-
-
-
-
-
-{/* Segunda propiedad  */}
-
-<div className='Propiedad ' id='Propiedad2' >
-
-{/* Texto */}
-<div className='texto m-5'>
-<h2>{items[4].titulo}</h2>
-<p>{items[4].descripcion}</p>
-
-
-
-{/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[4].idpropiedad}`}>
- <div>
- <button className='btn btn-primary text-center'>Ver más</button>
- </div>
-</Link>
-{/* /link que dirige al detalle del producto */}
-
-</div>
-{/* imagen */}
-<div className=' PropiedadesImageContainer d-flex ' id='PropiedadesImageContainer2'>
-<img
-          className="PropiedadesImage d-block"
-          src={image2}
-          alt="First slide"
+<div className="hideOnMobileVersion">
+      <div className="hideOnMobileVersion  d-flex justify-content-end text-right m-5">
+        <Iconos
+        className="hideOnMobileVersion"
+          dormitorios={items[4].dormitorios}
+          baños={items[4].baños}
+          habitaciones={items[4].habitaciones}
         />
-</div>
-{/* /imagen */}
+      </div></div>
 
+      {/* /Segunda propiedad  */}
 
-</div>
+      {/* Tercer propiedad  */}
 
-<div className=' d-flex justify-content-end text-right m-5'>
-<Iconos 
- dormitorios={items[4].dormitorios}
- baños={items[4].baños}
- habitaciones={items[4].habitaciones}
-/>
+      <div className="Propiedad ">
+        {/* imagen */}
+        <div className="PropiedadesImageContainer">
+          <img
+            className="PropiedadesImage d-block"
+            src={image3}
+            alt="First slide"
+          />
+        </div>
+        {/* /imagen */}
 
-</div>
+        {/* Texto */}
+        <div className="texto m-5">
+          <h2>{items[5].titulo}</h2>
+          <p>{items[5].descripcion}</p>
 
-{/* /Segunda propiedad  */}
+          {/* Link que dirige al detalle del producto */}
+          <Link to={`/detalle/${items[5].idpropiedad}`}>
+            <div>
+              <button className="btn btn-primary text-center">Ver más</button>
+            </div>
+          </Link>
+          {/* /link que dirige al detalle del producto */}
+        </div>
+      </div>
 
-
-{/* Tercer propiedad  */}
-
-<div  className='Propiedad '>
-
-
-{/* imagen */}
-<div className='PropiedadesImageContainer'>
-<img
-          className="PropiedadesImage d-block"
-          src={image3}
-          alt="First slide"
+      {/* iconos */}
+      <div className="m-5 hideOnMobileVersion">
+        <Iconos
+          dormitorios={items[5].dormitorios}
+          baños={items[5].baños}
+          habitaciones={items[5].habitaciones}
         />
-</div>
-{/* /imagen */}
+      </div>
 
-
-{/* Texto */}
-<div className='texto m-5'>
-<h2>{items[5].titulo}</h2>
-<p>{items[5].descripcion}</p>
-
-
-{/* Link que dirige al detalle del producto */}
-<Link to ={`/detalle/${items[5].idpropiedad}`}>
- <div>
- <button className='btn btn-primary text-center'>Ver más</button>
- </div>
-</Link>
-{/* /link que dirige al detalle del producto */}
-
-</div>
-
-</div>
-
-{/* iconos */}
-<div className='m-5'> <Iconos
- dormitorios={items[5].dormitorios}
- baños={items[5].baños}
- habitaciones={items[5].habitaciones}
- />
-</div>
-
-
-
-{/* /Tercer propiedad  */}
-
-</div>
-
-    );
-}
+      {/* /Tercer propiedad  */}
+    </div>
+  );
+};
 
 export default Propiedades;

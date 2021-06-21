@@ -14,10 +14,12 @@ import Spinner from "./Spinner";
 
 import { Link } from "react-router-dom";
 
+import Carousel from "./Carrousel";
+
 /* Importing react icon */
-import { BsChat } from "react-icons/bs"; 
-import { GoLocation } from "react-icons/go"; 
-import { FiPhone } from "react-icons/fi"; 
+import { BsChat } from "react-icons/bs";
+import { GoLocation } from "react-icons/go";
+import { FiPhone } from "react-icons/fi";
 
 class App extends Component {
   constructor(props) {
@@ -55,7 +57,7 @@ class App extends Component {
       const images = [];
 
       // loop que inserta imagenes si la cantidad es mayor a 4
-      for (let i = 4; i < items.resp.length; i++) {
+      for (let i = 1; i < items.resp.length; i++) {
         images.push({
           id: i,
           image: `https://res.cloudinary.com/dsoeo0zhi/image/upload/v1621448965/${items.resp[i].path}.jpg`,
@@ -76,19 +78,23 @@ class App extends Component {
 
           {/* container of cards and contact  */}
           <div className="d-flex justify-content-center flex-wrap">
-            <div>
-              {/* first card */}
-              <div className="DetailCard width50">
+            
+            <div className="">
+
+
+
+ {/* first card */}
+ <div  className="DetailCard width50 hideOnPc showOnMobile">
                 {/* Title */}
 
                 <h4 className="m-3">{items.propiedad.titulo}</h4>
 
                 {/* Direction */}
                 <div>
-                  
-                <h6 className="m-3"><GoLocation className="mr-2"/>{items.propiedad.direccion}</h6>
-
-                
+                  <h6 className="m-3">
+                    <GoLocation className="mr-2" />
+                    {items.propiedad.direccion}
+                  </h6>
                 </div>
 
                 {/* Price */}
@@ -109,24 +115,63 @@ class App extends Component {
               </div>
               {/* first card */}
 
-              {/* second card that contains description*/}
+
+
+              {/* Carousel  */}
+              <div className=" DetailCard height-100 carouselDetalle rounded ">
+                <Carousel images={images} />
+              </div>
+              {/* /Carousel  */}
+
+              {/*  description*/}
               <div className="DetailCard width50 mt-4">
                 {/* title of card  */}
-                <h5>Descripcion</h5>
+                <h5>Descripción</h5>
                 {/* /title of card  */}
 
                 {/* Description */}
                 <p>{items.propiedad.descripcion}</p>
                 {/* /Description */}
               </div>
-              {/* /second card that contains description*/}
-
-              {/* third card --contains images  */}
-              <div></div>
+              {/* / description*/}
             </div>
 
             {/* Contact card */}
-            <div>
+            <div >
+
+              {/* first card */}
+              <div id="contactUsDetail" className="  DetailCard width50 hideOnMobileVersion">
+                {/* Title */}
+
+                <h4 className="m-3">{items.propiedad.titulo}</h4>
+
+                {/* Direction */}
+                <div>
+                  <h6 className="m-3">
+                    <GoLocation className="mr-2" />
+                    {items.propiedad.direccion}
+                  </h6>
+                </div>
+
+                {/* Price */}
+                <div>
+                  <p className="m-3">{items.propiedad.precio}</p>
+                </div>
+
+                {/* Icons */}
+                <div id="IconsContainer">
+                  <Iconos
+                    className="d-flex justify-content-center"
+                    dormitorios={items.propiedad.dormitorios}
+                    baños={items.propiedad.baños}
+                    habitaciones={items.propiedad.habitaciones}
+                  />
+                </div>
+                {/* /Icons */}
+              </div>
+              {/* first card */}
+
+
               {/* Container of forms in contact us */}
               <div
                 id="contactUsDetail"
@@ -136,8 +181,10 @@ class App extends Component {
                 <h5 id="contactTitle "> Marcela Zanni</h5>
 
                 {/* Phone */}
-               <div> <FiPhone/> +54 9 3416 43-1440</div>
-
+                <div>
+                  {" "}
+                  <FiPhone /> +54 9 3416 43-1440
+                </div>
 
                 {/* Form inputs*/}
                 <form method="POST" target="/new-entry" className="form-group">
@@ -198,20 +245,13 @@ class App extends Component {
           </div>
           {/* /container of cards and contact  */}
 
-
           {/* Contact Button */}
           <Link to="/contacto" className="">
-
-          <button id="contactUsDetailButton">
-            <BsChat />
-          </button>
-          {/* /Contact Button */}
-
-
-        </Link>
-
-
-
+            <button id="contactUsDetailButton">
+              <BsChat />
+            </button>
+            {/* /Contact Button */}
+          </Link>
         </div>
       );
 

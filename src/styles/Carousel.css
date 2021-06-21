@@ -27,7 +27,9 @@ section {
 	z-index: 100;
 	text-shadow: 0 0 0.5rem rgb(9, 9, 34);
 }
-
+.d-none{
+	display: none!important;
+}
 
 .carouselImage{
 	height: 85vh ;

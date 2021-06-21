@@ -101,3 +101,13 @@ line-height: 1.85;}
 
 
 
+@media (max-width: 780px) {
+
+  p{
+
+    font-size: 12px;
+  }
+  .hideOnMobileVersion{
+    display: none;
+  }
+}

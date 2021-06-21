@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom'
 
 const Carrousel = ({images}) => {
 
- 
 
   return (
     <section className='slider '>
@@ -20,8 +19,8 @@ const Carrousel = ({images}) => {
           <img className='carouselImage ' src={image.image} alt={image.title} />
         
         <div className="d-flex justify-content-center">
-          <p id='text' className='slider-description ' >{image.title}</p>
-          </div>
+          {/* <p id='text' className={`slider-description ${image === undefined ? "d-none" :""  }`} >{image.title}</p>
+        */}   </div>
 
 </Link>
         </div>
