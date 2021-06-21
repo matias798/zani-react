@@ -1,7 +1,6 @@
 import Property from "./componente/Property";
 import CarouselContainer from "./componente/Carrousel";
 import NuestroEquipo from "./componente/NuestroEquipo";
-import ContactCard from "./componente/ContactCard";
 import Spinner from "./componente/Spinner";
 
 import React, { Component } from "react"; 
@@ -70,8 +69,6 @@ class indice extends Component {
           {/* Carrousel de imagenes */}
           <CarouselContainer images={images} />
 
-          {/* Tarjeta contacto */}
-          <ContactCard />
 
           {/* propiedades */}
           <Route path="/" exact>

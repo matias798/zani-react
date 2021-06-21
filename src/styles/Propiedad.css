@@ -4,6 +4,17 @@
     justify-content: space-evenly;
 }
 
+.btn-primary{
+    border:none;
+background-color:#50A7B8;}
+
+
+.btn-primary:hover{
+
+    background-color:#207D98;
+}
+
+
 
 #PropiedadesImageContainer2{
     justify-content: end;

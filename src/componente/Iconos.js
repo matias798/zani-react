@@ -3,7 +3,7 @@ import './../App.css';
 
 
 import { BiBed } from "react-icons/bi";
-import { FaToilet } from "react-icons/fa";
+import { BiBath } from "react-icons/bi";
 import { RiHome2Line } from "react-icons/ri";
 
 
@@ -23,7 +23,7 @@ const iconos = ({dormitorios,habitaciones,baños}) => {
 </div>
 
 <div className='d-flex justify-content-center'>
-<FaToilet className='PropiedadesIcons p m-3' />
+<BiBath className='PropiedadesIcons p m-3' />
 <span className='m-3'>{habitaciones} </span>
 </div>
 

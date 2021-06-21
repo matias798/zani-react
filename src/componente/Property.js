@@ -39,7 +39,7 @@ const Propiedades = ({items}) => {
 {/* Link que dirige al detalle del producto */}
 <Link to ={`/detalle/${items[3].idpropiedad}`}>
  <div>
- <button className='btn btn-primary-lg text-center'>Ver más</button>
+ <button className='btn btn-primary '>Ver más</button>
  </div>
 </Link>
 {/* /link que dirige al detalle del producto */}
@@ -78,7 +78,7 @@ habitaciones={items[3].habitaciones}/>
 {/* Link que dirige al detalle del producto */}
 <Link to ={`/detalle/${items[4].idpropiedad}`}>
  <div>
- <button className='btn btn-secondary-lg text-center'>Ver más</button>
+ <button className='btn btn-primary text-center'>Ver más</button>
  </div>
 </Link>
 {/* /link que dirige al detalle del producto */}
@@ -134,7 +134,7 @@ habitaciones={items[3].habitaciones}/>
 {/* Link que dirige al detalle del producto */}
 <Link to ={`/detalle/${items[5].idpropiedad}`}>
  <div>
- <button className='btn btn-secondary-lg text-center'>Ver más</button>
+ <button className='btn btn-primary text-center'>Ver más</button>
  </div>
 </Link>
 {/* /link que dirige al detalle del producto */}

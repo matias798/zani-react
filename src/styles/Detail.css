@@ -1,0 +1,56 @@
+body {
+  background-color: #f3f7fd !important;
+}
+
+#mainImage {
+  width: 100vw;
+  height: 85vh;
+}
+
+.DetailCard {
+  background-color: #ffffff;
+  border-radius:10px;
+  margin: 2rem;
+}
+
+.width50{
+  padding:2rem;
+    width:50vw !important;
+}
+
+#contactUsDetail{
+  
+    width:35vw !important;
+}
+
+#contactUsDetailButton{
+  position: fixed;
+  right:1rem;
+  bottom: 2rem;
+width:4rem;
+height:4rem;
+  border-radius:99%;
+
+}
+
+
+@media(max-width:780px){
+
+  /* image smaller height in mobile version*/
+  #mainImage {
+  height:70vh;
+  }
+
+  /* making both cards bigger in mobile version */
+  .width50,
+  #contactUsDetail{
+      width:80vw !important;
+  }
+#IconsContainer{
+
+display: flex;
+justify-content:center;
+
+}
+
+}
