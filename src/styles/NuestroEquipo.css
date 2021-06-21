@@ -54,6 +54,8 @@
 }
 .perfilAgente .advisor_thumb .social-info a:hover,
 .perfilAgente .advisor_thumb .social-info a:focus {
+    color: #ffffff !important;
+
     color: #3f43fd;
 }
 .perfilAgente .advisor_thumb .social-info a:last-child {
@@ -105,6 +107,8 @@
 .perfilAgente:hover .advisor_thumb::after,
 .perfilAgente:focus .advisor_thumb::after {
     background-color: #070a57;
+    color: #ffffff !important;
+
 }
 .perfilAgente:hover .advisor_thumb .social-info a,
 .perfilAgente:focus .advisor_thumb .social-info a {
@@ -119,6 +123,8 @@
 .perfilAgente:hover .single_advisor_details_info,
 .perfilAgente:focus .single_advisor_details_info {
     background-color: #070a57;
+    color: #ffffff !important;
+
 }
 .perfilAgente:hover .single_advisor_details_info::after,
 .perfilAgente:focus .single_advisor_details_info::after {

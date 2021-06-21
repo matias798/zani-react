@@ -198,13 +198,20 @@ class App extends Component {
           </div>
           {/* /container of cards and contact  */}
 
+
           {/* Contact Button */}
-          <div className="">
+          <Link to="/contacto" className="">
+
           <button id="contactUsDetailButton">
             <BsChat />
           </button>
           {/* /Contact Button */}
-        </div>
+
+
+        </Link>
+
+
+
         </div>
       );
 

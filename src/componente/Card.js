@@ -23,8 +23,8 @@ function Card({
         <img src={urlimagen} alt="a wallpaper" className="card-img-top" />
       </div>
       <div className="card-body p-5 max-size">
-        <h6 className="p-1">{titulo}</h6>
-        <p className="card-text text-start text-muted max-size">
+        <h6 className="p-1 text-center">{titulo}</h6>
+        <p className="card-text text-center text-muted max-size">
           {descripcion}
         </p>
 

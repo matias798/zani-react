@@ -21,7 +21,7 @@ section {
 	width: 100%;
 	text-align: center;
 	top: 4rem;
-	color: #fff;
+	color: #fff!important;
 	text-transform: uppercase;
 	padding: 0 4rem;
 	z-index: 100;
@@ -32,7 +32,13 @@ section {
 .carouselImage{
 	height: 85vh ;
 }
-#text{display: block;}
+#text{display: block;
+	background-color: #fff;
+	color: #50A7B8;
+	text-align: center;
+	opacity: 0.8;
+	border-radius:20px;
+width: 25vw;}
 
 
 .slider__content,

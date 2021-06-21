@@ -15,7 +15,7 @@ function Footer() {
 <div className="d-flex justify-content-around FooterWraper ">
 
    <div>
-    <h2 className="text-white text-center">Terminos y condiciones</h2>
+    <h5 className="text-white text-center">Terminos y condiciones</h5>
     <div className="text-center"><a  href="/">Copyright Notice</a> </div>
 
 <div className="text-center"><a  href="/sobre-nosotros">Sobre nosotros</a> </div>
@@ -23,7 +23,7 @@ function Footer() {
 
 
 <div>
-<h2 className="text-white  text-center  m-2 mb-4">Redes sociales</h2>
+<h5 className="text-white  text-center  m-2 mb-4">Redes sociales</h5>
 
 
     <a href="https://www.facebook.com/inmobiliariamarcelozanni" className="FooterIcons">

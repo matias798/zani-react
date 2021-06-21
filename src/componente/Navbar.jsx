@@ -34,21 +34,21 @@ function Navbar() {
       
 
       <li className="nav-item p-3 ">
-        <Link className="nav-link links nounderline " to="/"> <p> Home </p></Link>
+        <Link className="nav-link links nounderline nav-size " to="/">  Home </Link>
 
 
       </li>
 
       <li className="nav-item p-3">
-      <Link className="nav-link links nounderline " to="/alquiler"><p>Alquiler</p></Link>
+      <Link className="nav-link links nounderline nav-size " to="/alquiler">Alquiler</Link>
     </li>
 
   <li className="nav-item p-3">
-    <Link className="nav-link links nounderline " to="/venta"><p>Venta</p></Link>
+    <Link className="nav-link links nounderline nav-size " to="/venta">Venta</Link>
   </li>
 
   <li className="nav-item p-3">
-        <Link className="nav-link links nounderline " to="/contacto"><p>Contactanos</p></Link>
+        <Link className="nav-link links nounderline nav-size " to="/contacto">Contactanos</Link>
       </li>
 
     </ul>

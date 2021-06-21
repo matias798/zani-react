@@ -12,8 +12,9 @@ import Swal from "sweetalert2";
 
 function Contacto() {
   return (
-    <div className="d-flex justify-content-center flex-wrap-reverse ">
-      {/* Conteiner of forms in contact us */}
+    <div id="ContactBackgroundColor" >
+    <div className="d-flex justify-content-center flex-wrap-reverse mt-5">
+      {/* Container of forms in contact us */}
       <div id="contactUsForm" className="container">
         {/* Title */}
         <h5 id="contactTitle"> Envianos un mensaje!</h5>
@@ -72,15 +73,15 @@ function Contacto() {
 
         {/* Form inputs*/}
       </div>
-      {/* /Conteiner of forms in contact us */}
+      {/* /Container of forms in contact us */}
 
       {/* Ilustration */}
-      <div>
+      <div className=" mt-4 ">
         <img src={ContactUsIlustration} id="contactUsImage" alt="" />
       </div>
       {/* /Ilustration */}
     </div>
-  );
+    </div>);
   /****************************/
   /******** Functions ********/
   /**************************/

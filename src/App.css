@@ -13,9 +13,9 @@ body {
   
 
 
-h2,h3,h4,h5,h6,label,.PropiedadesIcons{
+h2,h3,h4,h5,.PropiedadesIcons{
     margin-bottom: 1rem;
-    color: #086788;
+    color:#1E4968 ;
     letter-spacing:1.75px;
     text-transform:uppercase;
     text-align:start;
@@ -24,8 +24,8 @@ h2,h3,h4,h5,h6,label,.PropiedadesIcons{
 
  }
 
-p{
-    color: #1E4968;
+p,h6{
+    color: #135878;
     font-size: 12px;
     font-weight:600;
     line-height: 1.6;
@@ -37,8 +37,13 @@ p{
 a{font-size: 14px;
 color: #ffffff;
 }
-a:hover{color: #2c3e50;}
+a:hover{
+  text-decoration:none!important;
+}
 
+.nav-link:hover{
+  text-decoration: none!important;
+}
 
 .card-2{display: flex;justify-content: space-around;
 background-color: #ffffff;
@@ -89,8 +94,9 @@ background:#ffffff;
 
 
 
-/* contact page styles */
-p{font-size: 17px;}
+p{font-size: 15px;
+
+line-height: 1.85;}
 
 
 

@@ -9,16 +9,19 @@ const Carrousel = ({images}) => {
  
 
   return (
-    <section className='slider rounded'>
+    <section className='slider '>
     <Slider className='slider__content'>
       {images.map((image) => (
-        <div key={image.id} className='slider__content--item'>
+
+<div key={image.id} className='slider__content--item'>
 
 <Link to ={`/detalle/${image.id}`}>
 
-          <img className='carouselImage rounded' src={image.image} alt={image.title} />
+          <img className='carouselImage ' src={image.image} alt={image.title} />
         
-          <p id='text' className='slider-description aligin-self-center'>{image.title}</p>
+        <div className="d-flex justify-content-center">
+          <p id='text' className='slider-description ' >{image.title}</p>
+          </div>
 
 </Link>
         </div>
